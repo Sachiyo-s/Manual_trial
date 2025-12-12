@@ -2,7 +2,7 @@
 
 /* Prevents Safari in landscape orientation from zooming in on text*/
 
-.micro-response693104621
+.micro-response974558596
 {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -12,19 +12,19 @@
 
 /* Default css class for hiding element*/
 
-.micro-response693104621 .hidden
+.micro-response974558596 .hidden
 {
 	display: none;
 }
 
-.micro-response693104621 a.glossaryTerm
+.micro-response974558596 a.glossaryTerm
 {
 	text-decoration: none;
 }
 
 /**/
 
-.micro-response693104621 #ios-wrapper
+.micro-response974558596 #ios-wrapper
 {
 	width: 100%;
 	height: 100%;
@@ -32,33 +32,33 @@
 	-webkit-overflow-scrolling: touch;
 }
 
-.micro-response693104621 .img_off
+.micro-response974558596 .img_off
 {
 	display: none;
 }
 
 /* Feedback/Pulse */
 
-.micro-response693104621 .button.pulse-required,
-.micro-response693104621 .button.feedback-required,
-.micro-response693104621 .pulse-required,
-.micro-response693104621 .feedback-required,
-.micro-response693104621 .feedback-topic-required,
-.micro-response693104621 .feedback-topic-required
+.micro-response974558596 .button.pulse-required,
+.micro-response974558596 .button.feedback-required,
+.micro-response974558596 .pulse-required,
+.micro-response974558596 .feedback-required,
+.micro-response974558596 .feedback-topic-required,
+.micro-response974558596 .feedback-topic-required
 {
 	display: none;
 }
 
-.micro-response693104621 .pulse-active .pulse-required,
-.micro-response693104621 .feedback-active .feedback-required,
-.micro-response693104621 .feedback-active.has-topic .feedback-topic-required
+.micro-response974558596 .pulse-active .pulse-required,
+.micro-response974558596 .feedback-active .feedback-required,
+.micro-response974558596 .feedback-active.has-topic .feedback-topic-required
 {
 	display: inline-flex;
 }
 
 /* Login Dialog */
 
-.micro-response693104621 .login-dialog
+.micro-response974558596 .login-dialog
 {
 	display: none;
 	z-index: 10001;
@@ -76,7 +76,7 @@
 	box-shadow: 0 4px 10px #333333;
 }
 
-.micro-response693104621 .login-dialog.pulse
+.micro-response974558596 .login-dialog.pulse
 {
 	position: fixed;
 	width: 408px;
@@ -85,7 +85,7 @@
 	margin-top: -214px;
 }
 
-.micro-response693104621 #pulse-login-frame
+.micro-response974558596 #pulse-login-frame
 {
 	width: 100%;
 	height: 100%;
@@ -98,7 +98,7 @@
 	box-shadow: 0 4px 10px #333333;
 }
 
-.micro-response693104621 .login-dialog-header
+.micro-response974558596 .login-dialog-header
 {
 	color: #FFF;
 	font-size: 13px;
@@ -130,7 +130,7 @@
 	border-radius: 3px 3px 0 0;
 }
 
-.micro-response693104621 .login-dialog-content
+.micro-response974558596 .login-dialog-content
 {
 	border-top: solid 1px #767676;
 	background: #5A5A5A;
@@ -142,7 +142,7 @@
 	padding: 17px;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper
+.micro-response974558596 .login-dialog-content .profile-item-wrapper
 {
 	color: #CECECE;
 	margin-bottom: 10px;
@@ -150,18 +150,18 @@
 	line-height: 32px;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper .label-wrapper
+.micro-response974558596 .login-dialog-content .profile-item-wrapper .label-wrapper
 {
 	margin-bottom: 5px;
 	float: left;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper .input-wrapper
+.micro-response974558596 .login-dialog-content .profile-item-wrapper .input-wrapper
 {
 	float: right;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper input[type=text]
+.micro-response974558596 .login-dialog-content .profile-item-wrapper input[type=text]
 {
 	margin: 0;
 	padding: 5px;
@@ -176,19 +176,19 @@
 	outline: none;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper
+.micro-response974558596 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper
 {
 	margin-top: 15px;
 	height: auto;
 	line-height: normal;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper .label-wrapper
+.micro-response974558596 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper .label-wrapper
 {
 	float: none;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper .email-notifications-group
+.micro-response974558596 .login-dialog-content .profile-item-wrapper.email-notifications-wrapper .email-notifications-group
 {
 	margin-right: 0;
 	padding: 12px;
@@ -204,19 +204,19 @@
 	box-shadow: 0 1px #888;
 }
 
-.micro-response693104621 .login-dialog-content .profile-item-wrapper.error input,
-.micro-response693104621 .login-dialog-content .profile-item-wrapper.error select
+.micro-response974558596 .login-dialog-content .profile-item-wrapper.error input,
+.micro-response974558596 .login-dialog-content .profile-item-wrapper.error select
 {
 	border: solid 1px #F00;
 	background-color: #FEE7E7;
 }
 
-.micro-response693104621 .login-dialog-buttons
+.micro-response974558596 .login-dialog-buttons
 {
 	text-align: right;
 }
 
-.micro-response693104621 .login-dialog button
+.micro-response974558596 .login-dialog button
 {
 	color: #FFF;
 	font-weight: bold;
@@ -248,7 +248,7 @@
 	cursor: pointer;
 }
 
-.micro-response693104621 .login-dialog button.close-dialog
+.micro-response974558596 .login-dialog button.close-dialog
 {
 	position: absolute;
 	top: 8px;
@@ -262,7 +262,7 @@
 	border: 0;
 }
 
-.micro-response693104621 .login-dialog .status-message-box
+.micro-response974558596 .login-dialog .status-message-box
 {
 	display: none;
 	color: #0F0;
@@ -276,38 +276,38 @@
 	border-radius: 3px;
 }
 
-.micro-response693104621 .login-dialog .status-message-box.error
+.micro-response974558596 .login-dialog .status-message-box.error
 {
 	color: #F00;
 	border: solid 1px #F00;
 	background-color: #FEE7E7;
 }
 
-.micro-response693104621 .login-dialog .status-message-box .message
+.micro-response974558596 .login-dialog .status-message-box .message
 {
 	display: none;
 }
 
-.micro-response693104621 .backlink-container
+.micro-response974558596 .backlink-container
 {
 	position: absolute;
 	bottom: 11px;
 	right: 20px;
 }
 
-.micro-response693104621 .backlink-container-topnav
+.micro-response974558596 .backlink-container-topnav
 {
 	bottom: 4px;
 	right: 4px;
 }
 
-.micro-response693104621 .backlink-container-sidenav
+.micro-response974558596 .backlink-container-sidenav
 {
 	bottom: 20px;
 	right: 20px;
 }
 
-.micro-response693104621 #mc-backlink
+.micro-response974558596 #mc-backlink
 {
 	text-decoration: none;
 	color: #7d858a;
@@ -316,12 +316,12 @@
 	font-weight: normal;
 }
 
-.micro-response693104621 #mc-backlink > sup
+.micro-response974558596 #mc-backlink > sup
 {
 	font-size: 12px;
 }
 
-.micro-response693104621 .height-container
+.micro-response974558596 .height-container
 {
 	/* just to contain top margin of element inside */
 	padding-top: 0.1px;
@@ -329,19 +329,19 @@
 	box-sizing: border-box;
 }
 
-.micro-response693104621 .height-container-no-footer
+.micro-response974558596 .height-container-no-footer
 {
 	padding-bottom: 30px;
 }
 
-.micro-response693104621 .height-container-sidenav
+.micro-response974558596 .height-container-sidenav
 {
 	padding-bottom: 40px;
 }
 
 /* to contain floating elements in the div */
 
-.micro-response693104621 .height-container:after
+.micro-response974558596 .height-container:after
 {
 	visibility: hidden;
 	display: block;
@@ -351,30 +351,30 @@
 	height: 0;
 }
 
-.micro-response693104621 .codeSnippet
+.micro-response974558596 .codeSnippet
 {
 	overflow: auto;
 }
 
-.micro-response693104621 .codeSnippetBody
+.micro-response974558596 .codeSnippetBody
 {
 	margin: 0;
 	font-family: inherit;
 	overflow: auto;
 }
 
-.micro-response693104621 .codeSnippetBody > pre
+.micro-response974558596 .codeSnippetBody > pre
 {
 	font-family: inherit;
 	margin: 0;
 }
 
-.micro-response693104621 .codeSnippetBody > pre > code
+.micro-response974558596 .codeSnippetBody > pre > code
 {
 	font-family: inherit;
 }
 
-.micro-response693104621 .codeSnippetBody span.codeSnippetLineNumbers
+.micro-response974558596 .codeSnippetBody span.codeSnippetLineNumbers
 {
 	text-decoration: inherit;
 	float: left;
@@ -384,59 +384,59 @@
 	text-align: right;
 }
 
-.micro-response693104621 .codeSnippetCopyButton
+.micro-response974558596 .codeSnippetCopyButton
 {
 	font: inherit;
 	right: 0;
 }
 
-.micro-response693104621 .multipleChoice > fieldset
+.micro-response974558596 .multipleChoice > fieldset
 {
 	border: none;
 }
 
-.micro-response693104621 .multipleChoice > .submitQuestionButton
+.micro-response974558596 .multipleChoice > .submitQuestionButton
 {
 	display: block;
 }
 
-.micro-response693104621 .multipleChoiceItem
+.micro-response974558596 .multipleChoiceItem
 {
 	display: flex;
 }
 
-.micro-response693104621 .multipleChoiceItem > div
+.micro-response974558596 .multipleChoiceItem > div
 {
 	display: inline-block;
 }
 
-.micro-response693104621 .multipleChoiceItem > div > p:first-child
+.micro-response974558596 .multipleChoiceItem > div > p:first-child
 {
 	margin-top: 0;
 }
 
-.micro-response693104621 .multipleChoiceItem > input
+.micro-response974558596 .multipleChoiceItem > input
 {
 	vertical-align: top;
 }
 
-.micro-response693104621 .topicQuestionFeedback
+.micro-response974558596 .topicQuestionFeedback
 {
 	display: none;
 }
 
-.micro-response693104621 .mc-el-hidden
+.micro-response974558596 .mc-el-hidden
 {
 	opacity: 0;
 }
 
-.micro-response693104621 .xref
+.micro-response974558596 .xref
 {
 	color: blue;
 	text-decoration: underline;
 }
 
-.micro-response693104621 div.MCBreadcrumbsBox_0
+.micro-response974558596 div.MCBreadcrumbsBox_0
 {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -445,7 +445,7 @@
 	margin-bottom: 10px;
 }
 
-.micro-response693104621 .codeSnippetBody
+.micro-response974558596 .codeSnippetBody
 {
 	font-family: Consolas, Monaco, 'Courier New', monospace;
 	padding: 1em 0 1em 0;
@@ -455,7 +455,7 @@
 	clear: both;
 }
 
-.micro-response693104621 .codeSnippetCopyButton
+.micro-response974558596 .codeSnippetCopyButton
 {
 	float: right;
 	padding-right: 1.5em;
@@ -465,12 +465,12 @@
 	page-break-before: avoid;
 }
 
-.micro-response693104621 .codeSnippetCopyButton:hover
+.micro-response974558596 .codeSnippetCopyButton:hover
 {
 	color: #888;
 }
 
-.micro-response693104621 .codeSnippet
+.micro-response974558596 .codeSnippet
 {
 	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 	font-size: 10pt;
@@ -478,17 +478,17 @@
 	border: solid 2px #ebf0fc;
 }
 
-.micro-response693104621 .MCWebHelpFramesetLink a
+.micro-response974558596 .MCWebHelpFramesetLink a
 {
 	
 }
 
-.micro-response693104621 .MCWebHelpFramesetLink.MCWebHelpFramesetLinkTop a
+.micro-response974558596 .MCWebHelpFramesetLink.MCWebHelpFramesetLinkTop a
 {
 	
 }
 
-.micro-response693104621 .MCWebHelpFramesetLink.MCWebHelpFramesetLinkBottom a
+.micro-response974558596 .MCWebHelpFramesetLink.MCWebHelpFramesetLinkBottom a
 {
 	
 }
