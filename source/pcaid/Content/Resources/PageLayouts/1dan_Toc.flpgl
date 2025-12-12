@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Name="First" Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" BackgroundRepeat="no-repeat" PageType="first">
+        <Frame Flow="body" Height="0.625in" Anchors="Left,Right,Top" X="-42px" Y="-0.4791667in" ColumnCount="1" Bottom="7.96875in" Right="-43px" Width="581px" BorderTopStyle="none" BorderTopWidth="0.75px" BorderBottomStyle="none" BorderBottomWidth="0.75px" FlowIndex="0">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:p>目次</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame ColumnCount="1" Anchors="Left,Right,Top,Bottom" X="-39px" Y="36px" Width="576px" Height="763px" Right="-41px" Bottom="-20px" DividerWidth="0" FlowIndex="1" Flow="body">
+        </Frame>
+    </Page>
+    <Page Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" BackgroundRepeat="no-repeat" BackgroundImage="none" PageType="normal" Name="Normal">
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" X="-39px" Y="-19px" Width="576px" Height="818px" Right="-41px" Bottom="-20px">
+        </Frame>
+    </Page>
+    <Page Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" BackgroundRepeat="no-repeat" BackgroundImage="none" PageType="empty">
+    </Page>
+</PageStyles>

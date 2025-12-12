@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="">
+    <head><title>[%=Heading.Level1%]</title>
+    </head>
+    <body>
+        <h1>パスワードと認証コードを使用した２段階ログイン方法</h1>
+        <h2 class="SectionTitleACNUM" MadCap:autonum="1. ">ログイン画面の表示</h2>
+        <p>PCA Hub などのサービスにアクセスすると、PCA ID のログイン画面が表示されます。</p>
+        <div class="Fig">
+            <img src="images/ログイン画面.png" alt="ログイン画面" class="scale400" />
+        </div>
+        <p>ログイン画面を表示するのは、以下のケースになります。</p>
+        <ul>
+            <li>
+                <p>新しいデバイスやブラウザーで、PCA サービスにアクセスしたとき</p>
+            </li>
+            <li>
+                <p>ログイン画面で認証してから12時間が経過したとき
+</p>
+                <ul>
+                    <li>
+                        <p>PCA サービスへのアクセスを継続しても、ログイン状態の期限は延長されません。</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="id_tip">
+            <p class="id_tip">ログイン状態を維持して認証の回数を減らす</p>
+            <p style="margin-top: 12px;">「ログイン状態を維持して認証の回数を減らす」チェックをオンにして認証した場合、ログイン状態を40日間維持します。この有効期間は、PCA サービスへの最終アクセスを起点として、自動的に延長されます。</p>
+        </div>
+        <p>ログイン画面に「ログイン先の組織」が表示されていないときは、明示的に組織名を付けてログイン名を入力してください。<br />詳しくは、「<MadCap:xref href="flow_04.htm">組織付きログイン名の入力</MadCap:xref>」をご確認ください。</p>
+        <div class="id_tip">
+            <p class="id_tip">メールアドレスの入力</p>
+            <p style="margin-top: 12px;">ログイン画面にメールアドレスを入力する場合は、「ログイン先の組織」を意識する必要はなく、組織名を入力する必要はありません。</p>
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="2. ">ログイン名またはメールアドレスの入力</h2>
+        <p>ログイン名、またはメールアドレスのいずれかを入力して、［次へ］をクリックします。</p>
+        <div class="Fig">
+            <img src="images/ログイン名の入力.png" alt="ログイン画面" class="scale400" />
+        </div>
+        <p>ログイン画面においては、ログイン名またはメールアドレスから、対象とするアカウントを識別します。<br />ログイン名は組織内で他ユーザーと重複しない固有の名前で、組織名とログイン名を組み合わせてアカウントを特定します。<br />一方でメールアドレスは、それだけでアカウントを特定します。</p>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="3. "><a name="step03"></a>パスワードの入力</h2>
+        <p>パスワードを入力して、［ログイン］ボタンをクリックします。</p>
+        <div class="Fig">
+            <img src="images/パスワードの入力.png" alt="ログイン画面" class="scale400" />
+        </div>
+        <p>目のアイコンをクリックすると、マスク処理された入力パスワードを表示して確認することができます。</p>
+        <p>パスワードを忘れてしまった場合、［パスワードを忘れた場合はこちら］リンクをクリックしてください。<br />詳しくは、「<MadCap:xref href="flow_05.htm">パスワードを忘れた場合</MadCap:xref>」をご確認ください。</p>
+        <div class="id_tip">
+            <p class="id_tip">パスキーを登録済みの場合</p>
+            <p style="margin-top: 12px;">パスキーで認証する画面に移動するので、［別の認証方法を利用する］リンクから［パスワード］を選択することで、上記の画面に移動できます。</p>
+            <div class="Fig">
+                <img src="images/パスワードの選択.png" alt="ログイン画面" class="scale300" />
+            </div>
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="4. ">２段階認証コードの入力</h2>
+        <p>２段階認証コードを入力して、［認証］ボタンをクリックします。</p>
+        <div class="Fig">
+            <img src="images/２段階認証コードの入力.png" alt="ログイン画面" class="scale400" />
+        </div>
+        <p>タイトルが「 【PCAサービス】2段階認証コード」のメールが、アカウントに登録されたメールアドレスに送信されます。<br />メールのタイトル末尾や、本文に記載されている認証コードを使用します。</p>
+        <div class="Fig">
+            <img src="images/２段階認証コードのメール.png" alt="ログイン画面" class="scale400" />
+        </div>
+        <div class="id_tip">
+            <p class="id_tip">２段階認証メールの再送信</p>
+            <p style="margin-top: 12px;">２段階認証コードのメールが届かない場合は、［再送信］ボタンをクリックして、繰り返しメールの送信を試すことができます。</p>
+        </div>
+        <p>２段階認証コードによる認証を利用できない場合、［別の認証方法を利用する］リンクをクリックして、バックアップコードによる認証を利用することができます。
+詳しくは、「<MadCap:xref href="flow_03.htm">パスワードとバックアップコードを使用した２段階ログイン方法</MadCap:xref>」をご確認ください。</p>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="5. ">ログイン完了</h2>
+        <p>ユーザーの認証が完了し、サービスへアクセスすることができます。<br />無事に目的のサービスへアクセスできると、一定期間はログイン画面による明示的な認証をスキップすることができます。</p>
+        <div class="id_caution">
+            <p class="id_caution">メールアドレス確認</p>
+            <p style="margin-top: 12px;">本人確認のため、メールアドレス確認が必要な場合があります。</p>
+            <p style="margin-top: 0;">下記の画面が表示された場合、「メールアドレス確認リクエスト」メールの案内に従って確認操作をしてください。</p>
+            <p style="margin-top: 0;">詳しい操作手順については、「<MadCap:xref href="../03_client/client_08.htm">メールでメールアドレス確認リクエストが届いたら</MadCap:xref>」をご確認ください。</p>
+            <div class="Fig">
+                <img src="images/メールアドレス確認要求画面.png" alt="ログイン画面" class="scale300" />
+            </div>
+        </div>
+    </body>
+</html>
