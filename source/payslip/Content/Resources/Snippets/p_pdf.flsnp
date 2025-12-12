@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="Section">
+            <h3 class="SectionTitleBK">■マニュアル保存場所</h3>
+            <p>製品内にある“Doc”フォルダにマニュアルファイルは保存されています。ファイル名は“***.pdf”と表されます。</p>
+            <p>製品内のマニュアルファイルの数、名称はご利用のPCAソフトにより異なります。</p>
+            <p>【例】 ○○マニュアル.pdf&#160;&#160;&#160;&#160;補足資料.pdf&#160;&#160;&#160;&#160;操作説明書.pdf</p>
+        </div>
+        <div class="Section">
+            <h3 class="SectionTitleBK">■PDFファイルとは</h3>
+            <p>
+                <MadCap:keyword term="PDF" MadCap:conditions="Common.Print" />「PDF」とは、「Portable Document Format」の略語です。</p>
+            <p>Adobe Systems Incorporated(アドビシステムズ社)の規格で、電子的な出版物を扱うデータ形式のことです。</p>
+            <p>「PDF」形式のデータを参照するには、『Adobe Reader』(又は『Adobe Acrobat Reader』)が必要です。『Adobe Reader』は無償配布されております。『Adobe Reader』は無償配布されており、アドビシステムズ社のホームページでセットアッププログラムをダウンロードすることができます。</p>
+        </div>
+        <div class="Section">
+            <h3 class="SectionTitleBK">■PDFファイルの参照方法</h3>
+            <p>エクスプローラ等で製品内にある“<span class="underline">Doc</span>”フォルダを参照し、ご覧になりたいマニュアルファイル(PDFファイル)をダブルクリックしてください。</p>
+            <p>
+                <MadCap:keyword term="Adobe Reader" MadCap:conditions="Common.Print" />自動的に『Adobe Reader』(又は『Adobe Acrobat Reader』)が起動し、マニュアルファイル(PDFファイル)を参照できます。</p>
+        </div>
+        <div class="NoteNote">
+            <p>Adobe、Adobe ロゴ、Acrobat、Acrobat ロゴ、PostScript、および PostScript ロゴは、Adobe Systems Incorporated(アドビシステムズ社)の米国および／または各国での商標または登録商標です。</p>
+        </div>
+    </body>
+</html>

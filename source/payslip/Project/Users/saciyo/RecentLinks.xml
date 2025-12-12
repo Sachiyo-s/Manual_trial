@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="C:\Users\saciyo\Documents\travail\マイドキュメント\hub_新スタイル適用\payslip\Content\system_admin\system_admin4.html" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
+        <Link Value="C:\Users\saciyo\Documents\travail\マイドキュメント\hub_新スタイル適用中\payslip\Content\staff\staff2.html" />
+    </Dialog>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="C:\Users\saciyo\Documents\マイ プロジェクト\000_最新\プロジェクト\payslip\Content\assets\system_admin1.image10.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.MultimediaGeneralDialogPage" />
+</RecentLinks>

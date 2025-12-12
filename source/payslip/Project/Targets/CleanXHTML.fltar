@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="CleanXHTML"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/index.htm"
+  MasterToc="/Project/TOCs/payslip.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/title2Color_Hub_html.css"
+  GetLatestBeforeCompile="false"
+  DisableAutoSync="true"
+  ConditionTagExpression="include[Common.Online or Common.Online_HTML or Primary.ALL], exclude[Common.Online_CHM or Common.Print or &quot;Primary.staff only&quot;]"
+  ConvertStylesheetStylesToInlineStyles="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Variables>
+    <Variable
+      Name="Primary/製品名">『Hub 給与明細』</Variable>
+  </Variables>
+</CatapultTarget>
