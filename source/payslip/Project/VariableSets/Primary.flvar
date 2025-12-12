@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="製品名"
+    Comment="" />
+  <Variable
+    Name="冊子名"
+    Comment=""
+    EvaluatedDefinition="" />
+  <Variable
+    Name="版数"
+    Comment="第X版　　XX年XX月"
+    EvaluatedDefinition="" />
+</CatapultVariableSet>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/H_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>[%=Heading.Level1%]</title>
+    </head>
+    <body>
+        <h1>明細を配信する</h1>
+        <p>PCA給与シリーズで出力した明細を PCA Hub 給与明細サービスを通じて社員に対して配信するための方法です。</p>
+        <div class="id_info">
+            <p class="id_info">制限</p>
+            <ul>
+                <li>
+                    <p>明細の配信や管理は PCA Hub 給与明細のシステム管理者のみが行うことができます。</p>
+                </li>
+                <li>
+                    <p>明細が公開されると社員に公開メールが配信されます。<br />サーバーの状況により指定された日時よりも遅れてメールが配信される場合があります。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="Section">
+            <h2><a name="SC01"></a>明細をアップロードする</h2>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「給与」-「給与明細書」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「出力の種類」で「印刷等」を選択し、配信を行いたい社員を指定して [印刷指示] ボタンをクリックします。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image1.png" alt="1" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">「出力先の選択」で「明細配信」を選択して [実行] ボタンをクリックします。<br />「PDFファイル名の設定」にてアップロードされるファイル名を変更することができます。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image2.png" alt="2" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">明細の配信設定を行います。</p>
+                <ol>
+                    <li>
+                        <p>PCA Hub 給与明細上で明細を公開およびメール配信したい日時を設定します。</p>
+                    </li>
+                    <li>
+                        <p>配信時に送信されるメールの件名と本文を設定します。</p>
+                    </li>
+                    <li>
+                        <p>明細以外に同時に配信したいファイルがあれば「添付ファイル」を社員ごとまたは一括で指定します。</p>
+                    </li>
+                    <div class="Fig">
+                        <img src="../assets/system_admin2.image3.png" alt="3" class="scale450" />
+                    </div>
+                    <div class="Fig">
+                        <img src="../assets/system_admin2.image4.png" alt="4" class="scale500" />
+                    </div>
+                </ol>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(5) &#160;">アップロード処理が正常に完了したことを確認します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image5.png" alt="5" class="scale450" />
+                </div>
+            </div>
+            <div>
+                <h3 class="SectionTitleBL2">アップロードできる明細の種類</h3>
+                <ul>
+                    <li>
+                        <p>給与明細書</p>
+                    </li>
+                    <li>
+                        <p>賞与明細書</p>
+                    </li>
+                    <li>
+                        <p>源泉徴収票</p>
+                    </li>
+                    <li>
+                        <p>給与改定通知書</p>
+                    </li>
+                    <li>
+                        <p>標準報酬決定通知書</p>
+                    </li>
+                    <li>
+                        <p>標準報酬改定通知書</p>
+                    </li>
+                    <li>
+                        <p>年末調整通知書</p>
+                    </li>
+                    <li>
+                        <p>還付金明細書</p>
+                    </li>
+                    <li>
+                        <p><a href="system_admin4.html">個人住民税特別徴収税額通知書（納税義務者用）</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>その他（任意のファイル）</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="SectionTitleBL2"><a name="seigen"></a>アップロードできるファイルに関する制限</h3>
+                <div class="scroll-table">
+                    <table style="margin-left: 0;margin-right: auto;width: 98%;mc-table-style: url('../Resources/TableStyles/H_Basic.css');" class="TableStyle-H_Basic" cellspacing="0">
+                        <col class="TableStyle-H_Basic-Column-Column1" />
+                        <col class="TableStyle-H_Basic-Column-Column1" />
+                        <col class="TableStyle-H_Basic-Column-Column1" />
+                        <col class="TableStyle-H_Basic-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-H_Basic-Head-Header1">
+                                <th class="TableStyle-H_Basic-HeadE-Column1-Header1">項目名</th>
+                                <th class="TableStyle-H_Basic-HeadE-Column1-Header1">上限値</th>
+                                <th class="TableStyle-H_Basic-HeadE-Column1-Header1">制限</th>
+                                <th class="TableStyle-H_Basic-HeadD-Column1-Header1">備考</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-H_Basic-Body-Body1">
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">ファイル名</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">250文字</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">下記の記号を禁止<br />・円マーク（¥）<br />・スラッシュ（/）<br />・コロン（:）<br />・アスタリスク（*）<br />・クエスチョンマーク（?）<br />・ダブルクォート（"）<br />・小なり（&lt;）<br />・大なり（&gt;）<br />・パイプライン（|）</td>
+                                <td class="TableStyle-H_Basic-BodyD-Column1-Body1">大文字と小文字や全角と半角を区別しません。</td>
+                            </tr>
+                            <tr class="TableStyle-H_Basic-Body-Body1">
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">書類名</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">30文字</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1" />
+                                <td class="TableStyle-H_Basic-BodyD-Column1-Body1">明細を受信した社員がクライアントサイト上で目視するファイル名となります。</td>
+                            </tr>
+                            <tr class="TableStyle-H_Basic-Body-Body1">
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">サイズ</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">5MB</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1" />
+                                <td class="TableStyle-H_Basic-BodyD-Column1-Body1" />
+                            </tr>
+                            <tr class="TableStyle-H_Basic-Body-Body1">
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">ファイルの種類</td>
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1" />
+                                <td class="TableStyle-H_Basic-BodyE-Column1-Body1">・.pdf<br />・.xlsx<br />・.xls<br />・.docx<br />・.doc<br />・.txt<br />・.jpg<br />・.jpeg<br />・.png</td>
+                                <td class="TableStyle-H_Basic-BodyD-Column1-Body1" />
+                            </tr>
+                            <tr class="TableStyle-H_Basic-Body-Body1">
+                                <td class="TableStyle-H_Basic-BodyB-Column1-Body1">ファイル数</td>
+                                <td class="TableStyle-H_Basic-BodyB-Column1-Body1">3</td>
+                                <td class="TableStyle-H_Basic-BodyB-Column1-Body1" />
+                                <td class="TableStyle-H_Basic-BodyA-Column1-Body1">社員1人あたりの1回の配信でアップロード可能なファイル数です。<br />1件の明細出力時に最大2件の任意のファイルを同時に配信することができます。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="id_tip">
+                    <p class="id_tip">ポイント</p>
+                    <ul>
+                        <li>
+                            <p>明細をアップロードして配信するためには、配信対象の社員が明細配布の同意案内に対して事前に同意している必要があります。</p>
+                        </li>
+                        <li>
+                            <p>給与明細などの明細とは別に、任意のファイルを同梱して同時に配信することが可能です。</p>
+                        </li>
+                        <li>
+                            <p>明細の配信設定は、一度にアップロードされるすべての明細に対して同一の設定が反映されます。</p>
+                        </li>
+                        <li>
+                            <p>PCA Hub 給与明細にアップロードされる実ファイルの名前（<strong>ファイル名</strong>）と、PCA Hub 給与明細の画面上で確認できるファイルの名前（<strong>書類名</strong>）は異なります。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3 class="SectionTitleBL2">公開日時に関する注意事項</h3>
+                <ul>
+                    <li>
+                        <p>明細をアップロードする際は、公開日時をPCA Hub 給与明細の契約期間内に設定してください。</p>
+                        <ul>
+                            <li>
+                                <p>PCA Hub 給与明細の契約期間内のみ、クライアントサイトおよび管理サイトを閲覧することができます。<br />契約終了後は、明細の閲覧およびダウンロード等、全ての操作が行えません。</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>サーバーの状況により、指定された日時よりも遅れてメールが配信される場合があります。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC02"></a>明細の配信状況を確認する</h2>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「給与」-「給与明細書」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「配信状況」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image6.png" alt="6" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">年間の配信状況を確認したい場合には「年間表示」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image7.png" alt="7" class="scale500" />
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC03"></a>明細の閲覧状況を確認する</h2>
+            <p>明細を受け取った社員が、明細を閲覧したかどうかを確認することができます。<br /></p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA Hub 給与明細の管理サイトにアクセスします。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「社員一覧」ページにて閲覧状況を確認したい任意の社員をクリックします。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">アップロード済みの明細一覧が表示されます。<br />既読の場合は細字で、未読の場合は太字で表示されます。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image8.png" alt="8" class="scale500" />
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC04"></a>明細の配信設定を変更する</h2>
+            <p>配信済みのデータを直接編集することはできません。<br /><MadCap:xref href="#SC01">明細をアップロードする</MadCap:xref> の手順で同じ明細を再度アップロードすることにより、既存の配信設定を上書きすることができます。</p>
+        </div>
+        <div class="Section">
+            <h2><a name="SC05"></a>配信した明細を削除する</h2>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「給与」-「給与明細書」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「配信状況」メニューを実行します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">明細を削除したい社員を選択して「削除」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin2.image9.png" alt="9" class="scale500" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

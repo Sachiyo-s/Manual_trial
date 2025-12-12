@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="ALL"
+    BackgroundColor="#f5c1db"
+    OriginalName="edoc" />
+  <ConditionTag
+    BackgroundColor="#eaf1fc"
+    Name="staff only"
+    Comment=""
+    OriginalName="staff only" />
+</CatapultConditionTagSet>

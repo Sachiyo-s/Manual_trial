@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="サポート用のAIチャットボットの学習データ用"
+  Type="PDF"
+  Destinations=""
+  MasterStylesheet="/Content/Resources/Stylesheets/hub_pdf.css"
+  CentralLinkIds=""
+  TargetLanguage="ja-jp"
+  InjectEmptyPages="false"
+  MasterToc="/Project/TOCs/payslip.fltoc"
+  GetLatestBeforeCompile="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  ConditionTagExpression="include[Common.Print or Primary.ALL], exclude[Common.Online or Common.Online_CHM or Common.Online_HTML or &quot;Primary.staff only&quot;]"
+  DisableAutoSync="true"
+  OutputFile="[%=Primary.製品名%]_AI学習用">
+  <PrintedOutput
+    CollapseMargins="false"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    PreserveTrackedChanges="true"
+    OutputFormat="doc" />
+  <DocumentProperties
+    Author="pca"
+    Title="[%=Primary.製品名%]" />
+  <PDF
+    ShowUsedBookmarks="false"
+    CollapsedBookmarks="true" />
+  <Variables>
+    <Variable
+      Name="Primary/製品名">『PCA Hub 給与明細』</Variable>
+  </Variables>
+</CatapultTarget>

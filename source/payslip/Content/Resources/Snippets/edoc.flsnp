@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>「e-文書法」対応文書管理ソフト『PCA Hub eDOC』の操作については、<MadCap:conditionalText MadCap:conditions="Common.Print">本書の</MadCap:conditionalText>「<MadCap:conditionalText MadCap:conditions="Common.Print">『PCA eDOC』との連動について</MadCap:conditionalText><MadCap:xref href="../../a_Common/eDOC.htm" MadCap:conditions="Common.Online">『PCA eDOC』との連動について</MadCap:xref>」をご覧ください。</p>
+    </body>
+</html>
