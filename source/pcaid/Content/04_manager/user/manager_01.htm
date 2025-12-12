@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="">
+    <head>
+        <link href="../../Resources/TableStyles/H_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>[%=Heading.Level1%]</title>
+    </head>
+    <body>
+        <h1>ユーザーのアカウントを作成する</h1>
+        <p>PCA ID を認証に利用して PCA サービスをご利用頂くには、PCA アカウントが必要です。<br />PCA アカウントは、個別または一括で作成することができます。</p>
+        <div class="id_info">
+            <p class="id_info">権限による制限</p>
+            <p style="margin-top: 12px;">PCA アカウントの作成は、組織管理者のみ行うことができます。</p>
+        </div>
+        <div class="id_info">
+            <p class="id_info">本人へのメール送信</p>
+            <ul>
+                <li>
+                    <p>PCA アカウントを作成すると、本人に対して、パスワード等の初期設定、またはメールアドレスの受信確認を行うためのメールを送信します。</p>
+                </li>
+                <li>
+                    <p>本人が組織管理者からのリクエストメールを処理することで、PCA アカウントを利用できるようになります。</p>
+                </li>
+            </ul>
+        </div>
+        <p>ユーザーを作成するには、手動で1件ずつユーザーを作成する方法と、ユーザー CSV ファイルから一括でユーザーを作成する方法があります。<br />ユーザー CSV ファイルから一括でユーザーを作成する方法については、「<MadCap:xref href="manager_02.htm">ユーザーのアカウントを一括で作成する</MadCap:xref>」をご確認ください。</p>
+        <p>PCA Hub をご利用の場合には、PCA Hub テナント管理サイトからユーザーを作成する方法もあります。<br />詳しくは PCA Hub のマニュアルをご確認ください。</p>
+        <div class="id_info">
+            <p class="id_info"><span class="info">PCA Hub</span> ユーザーの作成</p>
+            <p style="margin-top: 12px;">現在の組織が PCA Hub テナントと紐づいている場合、PCA アカウントのユーザーを作成することで、PCA Hub ユーザーとしても自動的に作成します。</p>
+        </div>
+        <h2 class="SectionTitleACNUM" MadCap:autonum="1. ">管理コンソールへのアクセス</h2>
+        <p>PCA ID 管理コンソールにアクセスするため、ブラウザーで、<a href="https://id.pca.jp/orgs" target="_blank">https://id.pca.jp/orgs</a> にアクセスします。<br />管理コンソールの画面を表示するには、組織管理者の権限が必要となります。</p>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="2. ">組織の選択</h2>
+        <p>現在の組織を確認し、必要があれば組織を選択します。</p>
+        <p>組織管理者の権限をもつ複数の組織に所属している場合、処理を実行したい組織を選択します。<br />アクセス直後は、前回の組織が選択されています。</p>
+        <div class="Fig">
+            <img src="../images/組織の選択.png" alt="組織の選択" class="scale500" />
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="3. ">カテゴリの選択</h2>
+        <p>［ユーザー管理］カテゴリを選択します。</p>
+        <div class="Fig">
+            <img src="images/ユーザー管理カテゴリ.png" alt="組織の選択" class="scale200" />
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="4. ">ユーザー作成の開始</h2>
+        <p>［ユーザー作成］ボタンをクリックして、ユーザー作成画面を表示します。</p>
+        <div class="Fig">
+            <img src="images/手動ユーザー作成.png" alt="組織の選択" class="scale300" />
+        </div>
+        <div class="Fig">
+            <img src="images/ユーザー作成_未入力.png" alt="組織の選択" class="scale500" />
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="5. ">ユーザーの作成</h2>
+        <p>ユーザー情報を入力後、［作成］ボタンをクリックして内容を保存します。</p>
+        <p>ログイン名は、メールアドレスのユーザー名（@より前）の部分を自動的にコピーします。<br />ユーザーを作成すると、入力したメールアドレスへメールを送信します。</p>
+        <div class="Fig">
+            <img src="images/ユーザー作成_入力後.png" alt="組織の選択" class="scale500" />
+        </div>
+        <table style="mc-table-style: url('../../Resources/TableStyles/H_Basic.css');margin-left: auto;margin-right: auto;" class="TableStyle-H_Basic" cellspacing="0">
+            <col class="TableStyle-H_Basic-Column-Column1" />
+            <col class="TableStyle-H_Basic-Column-Column1" />
+            <col class="TableStyle-H_Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-H_Basic-Head-Header1">
+                    <th class="TableStyle-H_Basic-HeadE-Column1-Header1">項目</th>
+                    <th class="TableStyle-H_Basic-HeadE-Column1-Header1">必須</th>
+                    <th class="TableStyle-H_Basic-HeadD-Column1-Header1">制限事項</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">メールアドレス</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1">◯</td>
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">
+                        <p>128文字 </p>
+                        <p class="sage">※ 以下の文字を使用できます。</p>
+                        <p class="Indent1">・半角英数字（英字は小文字で扱います）</p>
+                        <p class="Indent1">・ ハイフン（ <span class="note">-</span> ）</p>
+                        <p class="Indent1">・ ピリオド（ <span class="note">.</span> ）</p>
+                        <p class="Indent1">・ アンダーバー（ <span class="note">_</span> ）</p>
+                        <p class="Indent1">・ プラス（<span class="note">+</span>）</p>
+                        <p class="Indent1">・ パーセント（<span class="note">%</span>）</p>
+                        <p class="sage"> ※ 特殊な形式のメールアドレス（RFC 違反アドレス）は使用できません。</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">ログイン名</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1">◯</td>
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">
+                        <p>128文字</p>
+                        <p>※ 以下の文字を使用できます。 </p>
+                        <p class="Indent1">・ 半角英数字 </p>
+                        <p class="Indent1">・ ハイフン（ <span class="note">-</span> ）</p>
+                        <p class="Indent1">・ ピリオド（ <span class="note">.</span> ）</p>
+                        <p class="Indent1">・ アンダーバー（ <span class="note">_</span> ）</p>
+                        <p class="Indent1">・ アットマーク（<span class="note">@</span>）</p>
+                        <p> ※ 組織内で重複するログイン名は使用できません。</p>
+                        <p>※ 大文字・小文字の違いは無視します。</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">ユーザー名</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1">◯</td>
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">160文字</td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">姓</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1">◯</td>
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">20文字</td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">名</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1" />
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">20文字</td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyE-Column1-Body1">姓カナ</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyE-Column1-Body1">◯</td>
+                    <td class="TableStyle-H_Basic-BodyD-Column1-Body1">20文字</td>
+                </tr>
+                <tr class="TableStyle-H_Basic-Body-Body1">
+                    <td class="TableStyle-H_Basic-BodyB-Column1-Body1">名カナ</td>
+                    <td style="text-align: center;" class="TableStyle-H_Basic-BodyB-Column1-Body1" />
+                    <td class="TableStyle-H_Basic-BodyA-Column1-Body1">20文字</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="id_info">
+            <p class="id_info">使用不可文字</p>
+            <p style="margin-top: 12px;">すべての項目で、コロン（<span class="info">：</span>）、ダブルクォート（ <span class="info">"</span> ）、改行文字は使用できません。</p>
+        </div>
+        <div class="id_caution">
+            <p class="id_caution">特殊な形式のメールアドレス（RFC 違反アドレス）</p>
+            <ul>
+                <li>
+                    <p>特殊な形式のメールアドレス（RFC 違反アドレス）とは、標準仕様である RFC で定められている仕様・要件に準拠しないアドレスです。</p>
+                </li>
+                <li>
+                    <p>アットマーク（<span class="caution">@</span>）より前で、ピリオド ( <span class="caution">.</span> ) を先頭や末尾に使っていたり、記号が連続していると RFC 違反アドレスとみなされ、正常にメールが送信できない場合があります。
+</p>
+                    <ul>
+                        <li>
+                            <p>（例1）先頭ドット：.abcd@sample.jp</p>
+                        </li>
+                        <li>
+                            <p>（例2）＠直前ドット：abcd.@sample.jp</p>
+                        </li>
+                        <li>
+                            <p>（例3）ドット等の連続記号：ab..cd@sample.jp</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>キャリアのメールアドレス（@docomo.ne.jp、＠ezweb.ne.jp、@i.softbank.jp等のキャリアメール）が多く該当する場合があります。</p>
+                </li>
+            </ul>
+        </div>
+        <h2 class="SectionTitleACNUMcont" MadCap:autonum="6. ">リクエストメールの送信</h2>
+        <p>作成したユーザーに対して、 【PCA サービス】≪組織表示名≫ からの2種類のリクエストメールのうち、状況に応じて、以下のいずれかが届けられます。</p>
+        <p>作成したユーザーが、新規アカウントであれば、アカウント設定リクエストを送信します。</p>
+        <div class="Fig">
+            <img src="images/アカウント設定リクエスト.png" alt="組織の選択" class="scale400" />
+        </div>
+        <div class="id_info">
+            <p class="id_info">リクエストの有効期限</p>
+            <p style="margin-top: 12px;">
+
+アカウント設定リクエストの有効期限は1週間です。</p>
+            <p style="margin-top: 0;">  
+期限切れとなった場合は、組織管理者によるリクエストメールの再送信が必要となります。</p>
+            <p style="margin-top: 0;">
+再送信の手順については、「<MadCap:xref href="manager_04.htm">ユーザーのアカウントを管理する</MadCap:xref>」の「1. ユーザーに招待メールを送信する」をご確認ください。</p>
+        </div>
+        <p>すでに別の組織に所属している、既存の設定済みアカウントであれば、メールアドレス確認リクエストを送信します。</p>
+        <div class="Fig">
+            <img src="images/メールアドレス確認リクエスト.png" alt="組織の選択" class="scale400" />
+        </div>
+    </body>
+</html>

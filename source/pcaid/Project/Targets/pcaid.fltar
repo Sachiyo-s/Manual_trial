@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/index.htm"
+  MasterToc="/Project/TOCs/pcaid.fltoc"
+  Skin="/Project/Skins/PCA_Hub_HTML.flskn"
+  MasterStylesheet="/Content/Resources/Stylesheets/title2Color_pcaid_html.css"
+  ConditionTagExpression="include[Common.Online or Common.Online_HTML], exclude[Common.Online_CHM or Common.Print or Primary.未使用]"
+  MoveOutputContentToRoot="true"
+  MasterPage="/Content/Resources/MasterPages/HTMLTemplate.flmsp"
+  TabletBreakpoint="1000"
+  MobileBreakpoint="768"
+  UseCustomTopicFileExtension="true"
+  CustomTopicFileExtension="html"
+  UseEmptyAltText="true"
+  ContentInclusionType="Referenced"
+  EquationsOutputType="PNG"
+  GetLatestBeforeCompile="true"
+  DisableAutoSync="true"
+  PreCompileScaledImages="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Variables>
+    <Variable
+      Name="Primary/製品名">『PCA ID』</Variable>
+    <Variable
+      Name="Primary/版数">第5版 2023年8月</Variable>
+  </Variables>
+  <MicroContentSearch>
+    <FeaturedSnippets
+      type="AllFiles"
+      numberOfResults="1">
+      <microContentSubset />
+    </FeaturedSnippets>
+    <KnowledgePanel
+      type="Empty"
+      numberOfResults="1">
+      <microContentSubset />
+    </KnowledgePanel>
+  </MicroContentSearch>
+  <MetaTags
+    Enabled="false" />
+</CatapultTarget>
