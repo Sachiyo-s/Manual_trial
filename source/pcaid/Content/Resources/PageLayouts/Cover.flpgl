@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<PageStyles>
-    <Page Name="First" Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PageType="first" PaddingLeft="20mm" PaddingRight="20mm" PaddingTop="24mm" PaddingBottom="10mm" BackgroundPositionX="center" BackgroundPositionY="bottom" BackgroundRepeat="no-repeat">
-    </Page>
-    <Page Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PageType="normal" PaddingLeft="1.5in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" BackgroundRepeat="no-repeat" BackgroundImage="none" Name="Normal" BackgroundPositionX="center" BackgroundPositionY="bottom">
-        <Frame X="-98px" Y="502px" Width="599px" Height="315px" Flow="body" Right="-53px" Bottom="-38px" Anchors="" />
-    </Page>
-</PageStyles>

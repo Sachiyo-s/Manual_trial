@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<PageStyles>
-    <Page Name="First" Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PageType="first" PaddingLeft="65mm" PaddingRight="13mm" PaddingTop="80mm" PaddingBottom="20mm" BackgroundRepeat="no-repeat" BackgroundType="Solid" BackgroundImage="../Images/Chapter/tobira.png">
-        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="0in" Y="-0.6666667in" Right="0in" Bottom="0in" Width="393px" Height="657px" FlowIndex="1">
-        </Frame>
-    </Page>
-</PageStyles>
