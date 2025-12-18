@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/index.htm"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageLayout="/Content/Resources/PageLayouts/check.flpgl"
+    conditions="Common.Online_HTML"></TocEntry>
+  <TocEntry
+    Title="テナント管理者向け"
+    conditions="Primary.ALL">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/tenant_admin/tenant_admin1.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/tenant_admin/tenant_admin2.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/tenant_admin/tenant_admin3.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/tenant_admin/tenant_admin4.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="給与担当者向け"
+    conditions="Primary.ALL">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/system_admin/system_admin1.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/system_admin/system_admin2.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/system_admin/system_admin4.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/system_admin/system_admin3.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="社員向け">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/staff/staff1.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/staff/staff2.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/staff/staff3.html"
+      BreakType="pageLayout"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/check.flpgl" />
+  </TocEntry>
+</CatapultToc>

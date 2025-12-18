@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>/*<![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-MK2BFWL');/*]]>*/</script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK2BFWL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: RemoveHighlight Print;" />
+        <div class="headBtnSupport" id="BtnSupport"><a href="https://pca.jp/area_support/index.html" target="_blank" class="btn_white_c">お客様サポート</a>
+        </div>
+        <div class="headBtnFAQ" id="BtnFAQ"><a href="https://faq.pca.jp/" target="_blank" class="btn_white_c">FAQ</a>
+        </div>
+        <div class="breadcrumb"><a href="../../index.htm" class="breadTop">TOP</a><span class="breadArrow"> &gt; </span>
+            <MadCap:breadcrumbsProxy />
+        </div>
+        <div class="rightNavigation">
+            <MadCap:menuProxy mc-linked-toc="$topicHeadings" style="mc-toc-depth: 4;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" />
+        </div>
+        <MadCap:bodyProxy class="content3column" />
+        <footer>Copyright PCA CORPORATION All Rights Reserved.</footer>
+        <script src="../Javascript/document-script.js" defer="defer">
+        </script>
+		<script>/*<![CDATA[*/
+			var ua = window.navigator.userAgent.toLowerCase();
+			if (ua.indexOf("ipad") > -1 || (ua.indexOf("macintosh") > -1 && "ontouchend" in document))
+			{
+			var btn1 = document.getElementById('BtnSupport');
+			var btn2 = document.getElementById('BtnFAQ');
+			btn1.style.display = 'none';
+			btn2.style.display = 'none';
+		}/*]]>*/</script>
+    </body>
+</html>

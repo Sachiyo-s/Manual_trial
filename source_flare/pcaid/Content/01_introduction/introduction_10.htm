@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 id="section">組織とユーザー</h1>
+        <h2 id="pca-id"><a name="SC01"></a>PCA ID 組織とは？</h2>
+        <p>PCA ID 組織とは、ユーザーが所属するグループのことです。<br />この組織は、お客様の特定の部署や、会社全体などを想定しています。</p>
+        <p>ユーザーは特定の組織に所属します。そして複数の組織に所属することもできます。<br />組織においては、組織の管理者となるユーザーが、所属ユーザーや PCA ID 対応サービスの利用を管理することができます。</p>
+        <div class="id_tip">
+            <p class="id_tip">組織とテナント</p>
+            <p style="margin-top: 12px;">PCA ID の「組織」と、PCA Hub の「テナント」は異なるものです。<br />PCA Hub テナントは、組織の利用サービス（契約）として紐づける対象となります。</p>
+            <div class="Fig">
+                <img src="images/PCA ID 組織のイメージ.png" alt="Windowsの設定" class="scale500" />
+            </div>
+        </div>
+        <h3 class="SectionTitleBL3">組織の作成</h3>
+        <p>組織は、以下のケースで作成されます。</p>
+        <ul>
+            <li>PCA Hub テナントを作成する</li>
+            <li>PCAクラウド／PCAサブスクから PCA ID 組織を作成する</li>
+        </ul>
+        <p>PCA Hub からの作成については、「<MadCap:xref href="../01a_flow/a_flow_01.htm">PCA Hub から利用を始める</MadCap:xref>」をご確認ください。<br />PCAクラウド／PCAサブスクからの作成については、「<MadCap:xref href="../01a_flow/a_flow_02.htm">PCAクラウド／PCAサブスクから利用を始める</MadCap:xref>」、および「<MadCap:xref href="../01a_flow/a_flow_03.htm">PCA ID 組織を作成する</MadCap:xref>」をご確認ください。</p>
+        <h3 class="SectionTitleBL3">組織情報の確認</h3>
+        <p>組織では、お客様が利用する PCA ID 対応サービスや、顧客情報との紐づけを確認することができます。<br />詳しくは、「<MadCap:xref href="../04_manager/org/manager_10.htm">組織の利用サービスを確認する</MadCap:xref>」をご確認ください。</p>
+        <h3 class="SectionTitleBL3">組織の統合</h3>
+        <p>組織は、お客様が作成した別の組織と統合して、より大きな１つの組織にすることができます。<br />詳しくは、「<MadCap:xref href="../01a_flow/a_flow_04.htm">PCA ID 組織を統合する</MadCap:xref>」をご確認ください。</p>
+        <h2>PCA ID ユーザーとは？</h2>
+        <p>PCA ID ユーザーとは、組織に所属する、PCA ID 対応サービスの利用者のことで、通常は単に「ユーザー」と呼びます。</p>
+        <p>ユーザーの情報は、「PCA アカウント」としての認証情報を含みます。<br />アカウントは、メールアドレスによって区別され、ログイン名や<a href="introduction_06.htm">パスキー</a>、<a href="introduction_07.htm">パスワード</a>などの情報を持ち、ユーザー認証に使われます。<br />複数の組織に所属するユーザーであっても、メールアドレスが同じであれば、それらのユーザーのアカウントは１つだけです。それぞれの組織で同じ<a href="introduction_06.htm">パスキー</a>や<a href="introduction_07.htm">パスワード</a>を使います。<br />ユーザー認証においては、ユーザーの識別のために、メールアドレスか、<a href="../02_flow/flow_04.htm">組織ごとのログイン名</a>を使うことができます。</p>
+        <h3 class="SectionTitleBL3">ユーザーの紐づけ</h3>
+        <p>各サービスにおいて PCA ID 認証を利用するには、PCA ID ユーザーとの紐づけが必要となります。<br />PCA ID 対応サービスのユーザーに対して、PCA ID ユーザーを紐づけることで、サービス内で PCA アカウント によるログインが可能となります。<br />ログイン方法について詳しくは、「ログインの流れ」メニューをご確認ください。</p>
+        <div class="Fig">
+            <img src="images/PCA ID ユーザーとの紐づけ.png" alt="Windowsの設定" class="scale500" />
+        </div>
+        <div class="id_tip">
+            <p class="id_tip"><span class="tip">PCA Hub</span> ユーザー</p>
+            <p>PCA Hub は他のサービスとは異なり、PCA Hub ユーザーの作成時に、PCA ID ユーザーを自動作成して（未作成の場合）、紐づけが行われます。<br />その後は他のサービスと同様の動作となり、PCA Hub ユーザーを削除しても PCA ID ユーザーは残ります。</p>
+        </div>
+        <h3 class="SectionTitleBL3">ユーザー作成</h3>
+        <p>PCA ID ユーザーを作成するには、『<a href="https://id.pca.jp/orgs" target="_blank">PCA ID 管理コンソール</a>』から作成する方法と、『PCA Hub テナント管理』から作成する方法があります。</p>
+        <p>PCA ID 管理コンソールを使う方法については、「<MadCap:xref href="../04_manager/user/manager_01.htm">ユーザーのアカウントを作成する</MadCap:xref>」、および「<MadCap:xref href="../04_manager/user/manager_02.htm">ユーザーのアカウントを一括で作成する</MadCap:xref>」をご確認ください。<br />初回の組織管理者となるユーザーの作成方法については、「<MadCap:xref href="../01a_flow/a_flow_03.htm">PCA ID 組織を作成する</MadCap:xref>」、および「<MadCap:xref href="../01a_flow/a_flow_05.htm">初回の組織管理者アカウントを設定する</MadCap:xref>」をご確認ください。</p>
+        <p>PCA Hub テナント管理を使う方法については、<a href="https://pca.jp/area_support/manual/hub/index.html">PCA Hub のマニュアル</a>をご確認ください。</p>
+        <div class="id_caution">
+            <p class="id_caution">アカウントを共有しない</p>
+            <p style="margin-top: 12px;">自身のアカウントを別の人に利用させたり、複数の利用者でアカウントの共有はしないでください。</p>
+        </div>
+        <h3 class="SectionTitleBL3">ユーザー設定</h3>
+        <p>ユーザー情報やセキュリティの設定は、組織管理者がアクセスできる『<a href="https://id.pca.jp/orgs" target="_blank">PCA ID 管理コンソール</a>』、またはユーザー自身がアクセスできる『<a href="https://id.pca.jp/account" target="_blank">PCA ID アカウント設定</a>』から変更することができます。</p>
+        <p>組織管理者によるユーザー設定については、「<MadCap:xref href="../04_manager/user/manager_03.htm">ユーザー情報を変更する</MadCap:xref>」や「<MadCap:xref href="../04_manager/user/manager_05.htm">ユーザーのパスワードをリセットする</MadCap:xref>」をご確認ください。<br />ユーザー自身によるユーザー設定については、「<MadCap:xref href="../03_client/client_01.htm">自身のユーザー情報を変更する</MadCap:xref>」をご確認ください。</p>
+        <p>&#160;</p>
+        <p class="bold">ユーザー自身でセキュリティを設定する</p>
+        <p>セキュリティ設定では、ご自身の認証情報を設定できます。<br />PCA ID では、お客様のセキュリティが最重要と考えているため、パスワードのみのログイン方法は用意していません。<br />従来のパスワード方式に組み合わせる形で、２段階認証のためのバックアップコードや、最新方式のパスキーを利用することができます。</p>
+        <p>パスワードについて詳しくは、「<MadCap:xref href="introduction_07.htm">パスワードの作り方</MadCap:xref>」、「<MadCap:xref href="../03_client/client_03.htm">パスワードを変更する</MadCap:xref>」をご確認ください。<br />バックアップコードについて詳しくは、「<MadCap:xref href="../03_client/client_04.htm">バックアップコードを発行する</MadCap:xref>」をご確認ください。<br />パスワードを使った２段階ログイン方法は、「<MadCap:xref href="../02_flow/flow_02.htm">パスワードと認証コードを使用した２段階ログイン方法</MadCap:xref>」、または「<MadCap:xref href="../02_flow/flow_03.htm">パスワードとバックアップコードを使用した２段階ログイン方法</MadCap:xref>」をご確認ください。</p>
+        <p>最新方式となるパスキーについて詳しくは、「<a href="introduction_06.htm">パスキーとは</a>」、「<MadCap:xref href="../03_client/client_05.htm">パスキーを登録する</MadCap:xref>」をご確認ください。<br />パスキーを使ったログイン方法は、「<MadCap:xref href="../02_flow/flow_01.htm">パスキーを使用した簡単なログイン方法</MadCap:xref>」をご確認ください。</p>
+    </body>
+</html>

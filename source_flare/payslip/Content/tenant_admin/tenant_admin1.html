@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>[%=Heading.Level1%]</title>
+    </head>
+    <body>
+        <h1>社員のアカウントを作成する</h1>
+        <p>PCA Hub 給与明細を利用するには、PCA Hub のアカウントが必要です。</p>
+        <p>PCA Hub のアカウントは個別または一括で作成することができます。</p>
+        <p>PCA Hub アカウントは、テナント管理者が作成することもできますが、社員が自身で作成することもできます。<br /></p>
+        <div class="id_info">
+            <p class="id_info">制限</p>
+            <ul>
+                <li>
+                    <p>PCA Hub のアカウントの作成はテナント管理者のみが行うことができます。</p>
+                </li>
+            </ul>
+        </div>
+        <h2><a name="SC01"></a>社員のアカウントを作成する</h2>
+        <p>複数の社員アカウント作成方法があります。<br />いずれかの方法で作成をお願いします。<br /></p>
+        <div>
+            <h3 class="SectionTitleBL2"><a name="SC01_1"></a>PCA給与シリーズから社員のアカウントを作成する</h3>
+            <p>PCA給与シリーズから、社員のアカウントの作成、ライセンス登録を行うことができます。</p>
+            <p>こちらの方法は PCA Hub との連動設定の一部であるため、PCA Hub 給与明細のシステム管理者のみが行うことができます。<br /></p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">「社員一覧」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image4.png" alt="4" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">社員一覧画面にて「ライセンス登録」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image5.png" alt="5" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">ユーザー登録とライセンス付与を同時に行うか選択して実行します。<br />「ユーザー登録のみ行う」の実行後にライセンス付与を行う場合は「ユーザー登録とライセンス付与を行う」を選択してください。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image6.png" alt="6" class="scale350" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">アカウントが登録され、社員と PCA Hub アカウントの紐づけが完了したことを確認してください。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image7.png" alt="7" class="scale500" />
+                </div>
+            </div>
+            <div class="id_tip">
+                <p class="id_tip">ポイント</p>
+                <ul>
+                    <li>
+                        <p>チェックがONになっている社員を対象に、ライセンス登録を行います。</p>
+                    </li>
+                    <li>
+                        <p>PCA給与シリーズの社員マスターにメールアドレスが設定されている必要があります。</p>
+                    </li>
+                    <li>
+                        <p>「ユーザー登録とライセンス付与を行う」を選択して実行した場合、給与担当者による <MadCap:xref href="../system_admin/system_admin1.html#SC04">社員と PCA Hub のアカウントを紐づける</MadCap:xref> 操作は不要です。<br /></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3 class="SectionTitleBL2">手動でアカウントを作成する</h3>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">テナント管理サイトのユーザー一覧にアクセスします。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">［新規］ボタンをクリックして新規入力ダイアログを表示します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">社員情報の必須項目を入力します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">［保存］ボタンをクリックして入力内容を保存します。</p>
+            </div>
+            <div class="Fig">
+                <img src="../assets/tenant_admin1.image1.png" alt="1" class="scale450" />
+            </div>
+        </div>
+        <div>
+            <h3 class="SectionTitleBL2"><a name="SC01_3"></a>CSV ファイルからアカウントを作成する</h3>
+            <p>テナント管理者と給与明細システム管理者が異なる場合の作成方法です。</p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">
+                    <MadCap:xref href="../system_admin/system_admin1.html">給与明細配信のための設定を行う</MadCap:xref> の <MadCap:xref href="../system_admin/system_admin1.html#SC07">インポート用の CSV ファイルを作成する</MadCap:xref> にてCSVファイルを作成します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">テナント管理サイトのユーザー一覧にアクセスします。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">アクションメニューから「ユーザーのインポート」をクリックして CSV ファイルを選択します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image2.png" alt="2" class="scale400" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">インポートが完了して結果ログがダウンロードされるまでしばらく待ちます。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(5) &#160;">ダウンロードされたログファイルを開いてインポート結果を確認します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image3.png" alt="3" class="scale350" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="SectionTitleBL2"><a name="SC01_4"></a>社員自身がアカウントを作成する</h3>
+            <p>テナント管理者がユーザー登録URLを発行し、社員に自身のアカウントを登録してもらうことができます。</p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">テナント管理サイトのユーザー登録URLにアクセスします。<br /></p>
+                <p>操作方法は <a href="https://pca.jp/area_support/manual/hub/02_flow/flow_4.html" target="_blank">URLを利用したユーザーの追加</a> をご確認ください。</p>
+                <p>対象社員に自身のアカウントを登録していただきます。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">社員が登録したPCA Hub アカウントから、メールアドレスを受け入れます。<br /><a href="../system_admin/system_admin1.html#SC04-1">こちら</a> をご確認ください。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">「ライセンス登録」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image5.png" alt="2" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">対象社員を選択し、「ユーザー登録とライセンス付与を行う」を実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image6.png" alt="2" class="scale400" />
+                </div>
+            </div>
+            <p>&#160;</p>
+            <p>対象のPCA Hub アカウントに、アカウントの初期設定を行うためのメールと、ライセンス付与のメールが送信されます。</p>
+        </div>
+        <div class="Section">
+            <h3 class="SectionTitleBL2"><a name="SC02"></a>PCA Hub アカウントが作成されたら</h3>
+            <p>アカウントの初期設定を行うための手順は <a href="https://pca.jp/area_support/manual/hub/04_client/client_01.html" target="_blank">はじめてのログイン</a> をご覧ください。</p>
+        </div>
+        <div class="Section">
+            <h2><a name="SC03"></a>社員のアカウントを削除する</h2>
+            <h3 class="SectionTitleBL2"><a name="SC03_1"></a>PCA給与シリーズから社員のアカウントを削除する</h3>
+            <p>PCA給与シリーズから、社員のアカウントの削除、ライセンス解除を行うことができます。</p>
+            <p>こちらの方法は PCA Hub との連動設定の一部であるため、PCA Hub 給与明細のシステム管理者のみが行うことができます。<br /></p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">「社員一覧」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image4.png" alt="4" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">社員一覧画面にて「ライセンス解除」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image8.png" alt="8" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">ライセンスを解除するか、ユーザーを削除するかを選択して実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image9.png" alt="9" class="scale350" />
+                </div>
+            </div>
+            <div class="id_tip">
+                <p class="id_tip">ポイント</p>
+                <ul>
+                    <li>
+                        <p>チェックがONになっている社員を対象に、ライセンス解除を行います。</p>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="SectionTitleBL2">手動でアカウントを削除する</h3>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">テナント管理サイトのユーザー一覧にアクセスします。<br /></p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">削除したいアカウントにチェックを入れます。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image10.png" alt="10" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">アクションメニューから［ユーザー情報の削除］を選択します。</p>
+                <div class="Fig">
+                    <img src="../assets/tenant_admin1.image11.png" alt="11" class="scale450" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">［削除］ ボタンをクリックして削除を実行します。<br /></p>
+            </div>
+            <div class="id_tip">
+                <p class="id_tip">ポイント</p>
+                <ul>
+                    <li>
+                        <p>ユーザーを削除した場合は元に戻すことはできません。同じ内容でユーザーを再登録しても異なるユーザーとして登録されます。<br /></p>
+                    </li>
+                    <li>
+                        <p>ユーザーを使用する可能性がある場合は、ユーザーを削除せず <MadCap:xref href="tenant_admin3.html#SC02">社員のライセンスを解除する</MadCap:xref> の操作を行います。<br /></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

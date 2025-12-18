@@ -1,0 +1,2231 @@
+﻿/*<meta />*/
+
+@charset "UTF-8";
+
+@import url('comstyle.css') print;
+
+/* =============================================================================
+ PDF
+============================================================================= */
+
+@media print
+{
+	body
+	{
+		font-family: 'ＤＦＰ新細丸ゴシック体';
+	}
+
+	p
+	{
+		font-size: 9pt;
+		line-height: 150%;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+	}
+
+	p.okuduke
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		text-indent: 2.5em;
+		color: #000000;
+		background: url("../Images/style/back.png") no-repeat;
+		background-position: left 6px;
+		line-height: 27pt;
+		background-size: 4%;
+	}
+
+	div.Frame
+	{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		margin-top: 1em;
+		padding-bottom: 3px;
+		padding-left: 15px;
+		padding-right: 3px;
+		padding-top: 15px;
+	}
+
+	/* 図
+--------------------------------------------------------- */
+
+	div.Fig
+	{
+		margin-bottom: 0.8em;
+		margin-top: 0.8em;
+		page-break-inside: avoid;
+		text-align: center;
+	}
+
+	div.FigLeft
+	{
+		margin-bottom: 0.8em;
+		margin-top: 0.8em;
+		page-break-inside: avoid;
+		text-align: left;
+	}
+
+	p.copyright
+	{
+		border-style: solid;
+		border-width: 2px;
+		border-color: #000000;
+		line-height: 25pt;
+		text-align: center;
+		background-color: #f5f5f5;
+	}
+
+	/* 画像
+	--------------------------------------------------------- */
+
+	img.scale100
+	{
+		height: auto;
+		width: 100px;
+	}
+
+	img.scale130
+	{
+		height: auto;
+		width: 130px;
+	}
+
+	img.scale150
+	{
+		height: auto;
+		width: 150px;
+	}
+
+	img.scale200
+	{
+		height: auto;
+		width: 200px;
+	}
+
+	img.scale250
+	{
+		height: auto;
+		width: 250px;
+	}
+
+	img.scale280
+	{
+		height: auto;
+		width: 280px;
+	}
+	
+	img.scale300
+	{
+		height: auto;
+		width: 300px;
+	}
+
+	img.scale350
+	{
+		height: auto;
+		width: 350px;
+	}
+
+	img.scale400
+	{
+		height: auto;
+		width: 400px;
+	}
+
+	img.scale450
+	{
+		height: auto;
+		width: 450px;
+	}
+
+	img.scale500
+	{
+		height: auto;
+		width: 500px;
+	}
+
+	img.scale550
+	{
+		height: auto;
+		width: 550px;
+	}
+
+	img.scale570
+	{
+		height: auto;
+		width: 570px;
+	}
+
+	img.scale600
+	{
+		height: auto;
+		width: 600px;
+	}
+
+	img.scale680
+	{
+		height: auto;
+		width: 680px;
+	}
+
+	img.popupScale100
+	{
+		height: auto;
+		width: 100px;
+	}
+
+	img.popupScale130
+	{
+		height: auto;
+		width: 130px;
+	}
+
+	img.popupScale150
+	{
+		height: auto;
+		width: 150px;
+	}
+
+	img.popupScale200
+	{
+		height: auto;
+		width: 200px;
+	}
+
+	img.popupScale280
+	{
+		height: auto;
+		width: 280px;
+	}
+
+	img.popupScale250
+	{
+		height: auto;
+		width: 250px;
+	}
+
+	img.popupScale300
+	{
+		height: auto;
+		width: 300px;
+	}
+
+	img.popupScale350
+	{
+		height: auto;
+		width: 350px;
+	}
+
+	img.popupScale400
+	{
+		height: auto;
+		width: 400px;
+	}
+
+	img.popupScale450
+	{
+		height: auto;
+		width: 450px;
+	}
+
+	img.popupScale500
+	{
+		height: auto;
+		width: 500px;
+	}
+
+	img.popupScale550
+	{
+		height: auto;
+		width: 550px;
+	}
+
+	img.popupScale570
+	{
+		height: auto;
+		width: 570px;
+	}
+
+	img.popupScale600
+	{
+		height: auto;
+		width: 600px;
+	}
+
+	img.popupScale680
+	{
+		height: auto;
+		width: 680px;
+	}
+	
+	/* セクション------------------------------------ */
+
+	h3.SectionTitleBL
+	{
+		font-size: 10pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-left: -2em;
+		padding-left: 1em;
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+		border-bottom-style: solid;
+		border-color: #c0c0c0;
+		line-height: 17pt;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SL:{n=1}. ";
+		color: #000000;
+		border-bottom-width: 1px;
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBLcont
+	{
+		font-size: 10pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2em;
+		padding-left: 1em;
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #c0c0c0;
+		line-height: 17pt;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SL:{n+}. ";
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleAC
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -10pt;
+		text-indent: -2.5em;
+		padding-left: 3em;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 20pt;
+		page-break-after: avoid;
+		mc-auto-number-format: "◆ ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleACBK
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -10pt;
+		text-indent: -2.5em;
+		padding-left: 3em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-format: "◆ ";
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleWaku
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -10pt;
+		text-indent: -2em;
+		padding-left: 2.5em;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 20pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleGaiyo
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_gaiyo.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleUnyo
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_hoka.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleCyui
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_cyui.gif") no-repeat;
+		background-color: #d3d3d3;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitlePrint
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_print.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleGamen
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_gamen.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-before: always;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleBenri
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_benri.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleBaai
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_baai.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleSanko
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_sanko.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleKanren
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		padding-bottom: 2px;
+		background: url("../Images/style/p_kanren.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleHint
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_hint.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleTejun
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_tejun.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-before: always;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleHelp
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_tejun.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleKOMOKU
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url('../Images/style/p_komoku.gif') no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleKISAIKOMOKU
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url('../Images/style/p_komoku.gif') no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBK
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleGray
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: 2em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		margin-right: 0em;
+		page-break-after: avoid;
+		background-color: #ffffb0;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		text-align: center;
+		line-height: 20pt;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleGrayt
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦＰ新細丸ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		background-color: #d3d3d3;
+		page-break-after: avoid;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleGraytNUM
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦＰ新細丸ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #d3d3d3;
+		page-break-after: avoid;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SJ:{n=1}. ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleGraytNUMcont
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦＰ新細丸ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #d3d3d3;
+		page-break-after: avoid;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SJ:{n+}. ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleUnyoNUM
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		page-break-after: avoid;
+		background-color: #ffffb0;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		text-align: center;
+		line-height: 20pt;
+		mc-auto-number-format: "SQ:運用例{n=1}";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleUnyoNUMcont
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		page-break-after: avoid;
+		background-color: #ffffb0;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		text-align: center;
+		line-height: 20pt;
+		mc-auto-number-format: "SQ:運用例{n+1}";
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleACNUM
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		text-indent: -2em;
+		padding-left: 2.3em;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 20pt;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SI:{n=1}. ";
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleACNUMcont
+	{
+		font-size: 12pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		text-indent: -2em;
+		padding-left: 2.3em;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 20pt;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SI:{n+}. ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBKNUM
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SB:{n=1}. ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBKNUMcont
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SB:{n+}. ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSUB
+	{
+		font-size: 11pt;
+		color: #000000;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -2.6em;
+		padding-left: 3.6em;
+		line-height: 17pt;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSUBNUM
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -2.6em;
+		padding-left: 3.6em;
+		line-height: 17pt;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SB:{n}-{n=1}. ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSUBNUMcont
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SB:{n}-{n+}. ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBKNUMKK
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SP:({n=1}) ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBKNUMKKcont
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SP:({n+}) ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitle
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #000000;
+		margin-left: -2em;
+		margin-top: 0.5em;
+		margin-bottom: 5pt;
+		padding-left: 8px;
+		line-height: 17pt;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSikaku
+	{
+		font-size: 9pt;
+		font-family: 'ＤＦＰ新細丸ゴシック体';
+		color: #000000;
+		margin-left: -0.7em;
+		margin-top: 0.5em;
+		margin-bottom: 4pt;
+		text-indent: -2em;
+		padding-left: 8px;
+		page-break-after: avoid;
+		mc-auto-number-format: "■ ";
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSiwake
+	{
+		font-size: 11pt;
+		color: #000000;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		page-break-after: avoid;
+		background-color: #ffffb0;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		text-align: center;
+		line-height: 20pt;
+		mc-heading-level: 0;
+	}
+
+	h4.SectionTitleSiwakeLeft
+	{
+		font-size: 11pt;
+		color: #000000;
+		margin-left: -0.8em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		margin-right: 0em;
+		line-height: 17pt;
+		background-color: #ffffb0;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-top-style: solid;
+		border-top-width: 0px;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-color: #000000;
+		text-align: Left;
+		line-height: 20pt;
+		mc-heading-level: 0;
+	}
+
+	p.Seigen
+	{
+		font-size: 9pt;
+		text-decoration: underline;
+		padding-top: 0pt;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+		margin-left: 0em;
+		padding-left: 3.5em;
+		background: url('../Images/style/p_seigen.gif') no-repeat;
+		background-position: left 15px;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		line-height: 40pt;
+		mc-auto-number-format: "制限事項";
+	}
+
+	p.Baai
+	{
+		font-size: 9pt;
+		text-decoration: underline;
+		padding-top: 0pt;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+		margin-left: 0em;
+		padding-left: 3.5em;
+		background: url('../Images/style/p_baai.gif') no-repeat;
+		background-position: left 15px;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		line-height: 40pt;
+		mc-auto-number-format: "こんな場合には";
+	}
+
+	p.Baai2
+	{
+		font-size: 9pt;
+		text-decoration: underline;
+		padding-top: 0pt;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+		margin-left: 0em;
+		padding-left: 3.5em;
+		background: url('../Images/style/p_baai.gif') no-repeat;
+		background-position: left 15px;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		line-height: 40pt;
+	}
+
+	p.Index1
+	{
+		white-space: normal;
+		mc-leader-align: right;
+		mc-leader-format: "dot";
+		mc-leader-offset: 25px;
+	}
+
+	p.Index2
+	{
+		white-space: normal;
+		mc-leader-align: right;
+		mc-leader-format: "dot";
+		mc-leader-offset: 25px;
+	}
+
+	/* リスト
+--------------------------------------------------------- */
+
+	ul.komeLeft
+	{
+		margin-left: 0.3em;
+	}
+
+	/* ご注意
+--------------------------------------------------------- */
+
+	p.front
+	{
+		font-family: 'ＤＦ特太ゴシック体';
+		page-break-after: avoid;
+		font-size: 12pt;
+		color: #000000;
+		background: url("../Images/style/back.png") no-repeat;
+		margin-left: 2pt;
+		margin-right: 0pt;
+		margin-top: 20px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 30px;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		line-height: 19pt;
+	}
+
+	/* 目次
+--------------------------------------------------------- */
+
+	h1.front
+	{
+		font-family: 'ＤＦ特太ゴシック体';
+		page-break-after: avoid;
+		font-size: 18pt;
+		color: #000000;
+		background: url("../Images/style/toc.png") no-repeat;
+		margin-left: 2pt;
+		margin-right: 0pt;
+		margin-top: 5px;
+		padding-top: -5px;
+		padding-left: 45px;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-color: #000000;
+		line-height: 38pt;
+		mc-heading-level: 0;
+	}
+
+	/* 見出し
+--------------------------------------------------------- */
+
+	h1.chapter
+	{
+		font-family: 'ＤＦ特太ゴシック体';
+		page-break-after: avoid;
+		font-size: 26pt;
+		margin-left: 0;
+		margin-right: 6pt;
+		margin-top: 3pt;
+		margin-bottom: 3pt;
+		color: #000000;
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-style: solid;
+		border-top-width: 6px;
+		border-bottom-style: solid;
+		border-bottom-width: 6px;
+		border-color: #a9a9a9;
+		line-height: 40pt;
+		mc-heading-level: 1;
+	}
+
+	h1::before
+	{
+		font-weight: normal;
+		font-style: normal;
+		font-family: DFGHSGothic-W9;
+	}
+
+	h1.SmallFont
+	{
+		font-size: 1pt;
+		color: #ffffff;
+		background-color: #ffffff;
+		line-height: 1.5pt;
+	}
+
+	h1
+	{
+		font-family: 'ＤＦ特太ゴシック体';
+		page-break-after: avoid;
+		font-size: 18pt;
+		color: #000000;
+		margin-left: -3pt;
+		margin-right: 0pt;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		border-left-style: solid;
+		border-left-width: 32px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #000000;
+		line-height: 22pt;
+		mc-heading-level: 2;
+	}
+
+	h1.level1
+	{
+		font-family: 'ＤＦ特太ゴシック体';
+		page-break-after: avoid;
+		font-size: 18pt;
+		color: #000000;
+		margin-left: -3pt;
+		margin-right: 0pt;
+		padding-left: 2px;
+		border-left-style: solid;
+		border-left-width: 23px;
+		border-right-style: solid;
+		border-right-width: 1.5px;
+		border-top-style: solid;
+		border-top-width: 1.5px;
+		border-bottom-style: solid;
+		border-bottom-width: 1.5px;
+		border-color: #000000;
+		line-height: 25pt;
+		mc-heading-level: 1;
+	}
+
+	h1.Index
+	{
+		mc-heading-level: 1;
+	}
+
+	h4.SectionTitleBKNUM
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		margin-top: 0.5em;
+		margin-bottom: 10pt;
+		text-indent: -1.8em;
+		padding-left: 2.8em;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		mc-auto-number-format: "SB:{n=1}. ";
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBK
+	{
+		font-size: 11pt;
+		font-family: 'ＤＦ特太ゴシック体';
+		color: #ffffff;
+		margin-left: -2.5em;
+		padding-left: 0.5em;
+		margin-top: 20pt;
+		margin-bottom: 8pt;
+		line-height: 17pt;
+		background-color: #000000;
+		page-break-after: avoid;
+		mc-heading-level: 0;
+	}
+
+	MadCap|xref.ItemNumber
+	{
+		mc-format: "{paranum}";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemNumberPage
+	{
+		mc-format: "{paranum}（P. {page}）";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemPage
+	{
+		mc-format: "（P. {page}）";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemPage2
+	{
+		mc-format: "P. {page}";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemPage3
+	{
+		mc-format: "（P. {page}参照）";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemTitle
+	{
+		mc-format: "{para}";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemNumberTitle
+	{
+		mc-format: "{paranum}{para}";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemTitle_page
+	{
+		mc-format: "{para} （P. {page}）";
+		color: #0000ff;
+	}
+
+	MadCap|xref.ItemNumberTitle_page
+	{
+		mc-format: "{paranum}{para} （P. {page}）";
+		color: #0000ff;
+	}
+
+	MadCap|xref
+	{
+		mc-format: "{para}";
+		color: #0000ff;
+	}
+
+	p.TOC1
+	{
+		margin-top: 15px;
+		font-weight: bold;
+	}
+
+	MadCap|TocProxy
+	{
+		line-height: 14pt;
+		border-top-style: none;
+	}
+
+	MadCap|indexProxy
+	{
+		line-height: 12pt;
+		border-top-style: none;
+	}
+
+	MadCap|miniTocProxy
+	{
+		padding-bottom: 0.5em;
+		padding-right: 20px;
+		padding-top: 0.5em;
+		margin-left: 6px;
+		line-height: 16pt;
+		border-top-style: none;
+		border-top-width: 0px;
+	}
+
+	h1.title
+	{
+		page-break-after: avoid;
+		margin-left: 0;
+		margin-right: 6pt;
+		margin-top: 3pt;
+		margin-bottom: 3pt;
+		color: #000000;
+		border-top-width: 6px;
+		border-bottom-width: 6px;
+		border-color: #a9a9a9;
+		mc-heading-level: 1;
+		border-bottom-style: double;
+		border-left-style: double;
+		border-left-width: 6px;
+		border-right-style: double;
+		border-right-width: 6px;
+		border-top-style: double;
+		font-family: DFGMaruGothic-Md;
+		font-size: 18pt;
+		line-height: 24pt;
+		text-align: center;
+	}
+
+	h1.title2
+	{
+		margin-left: 0;
+		margin-right: 6pt;
+		margin-top: 3pt;
+		margin-bottom: 3pt;
+		color: #000000;
+		border-color: #a9a9a9;
+		mc-heading-level: 1;
+		font-family: DFGMaruGothic-Md;
+		font-size: 10pt;
+		line-height: 14pt;
+		text-align: left;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+	}
+
+	p.tate
+	{
+		mc-leader-indent: 0px;
+		line-height: 100%;
+	}
+
+	h2.SectionTitleTejun2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_tejun.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-before: always;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleBaai2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_baai.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleBenri2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_benri.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleCyui2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_cyui.gif") no-repeat;
+		background-color: #d3d3d3;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleGaiyo2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_gaiyo.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleKOMOKU2,
+	h2.SectionTitleKISAIKOMOKU2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url('../Images/style/p_komoku.gif') no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h2.SectionTitleSanko2
+	{
+		font-family: ＤＦ特太ゴシック体;
+		margin-top: 20pt;
+		margin-bottom: 10pt;
+		margin-left: -2em;
+		padding-left: 0.5em;
+		background: url("../Images/style/p_sanko.gif") no-repeat;
+		background-position: right 6px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-color: #c0c0c0;
+		line-height: 26pt;
+		page-break-after: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+	}
+
+	p.h_yoshiki
+	{
+		font-size: 16pt;
+		font-family: ＤＦ特太ゴシック体;
+		padding-left: 8pt;
+	}
+
+	h1.No
+	{
+		border-bottom-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-color: #000000;
+		border-left-color: #000000;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-right-color: #000000;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-top-color: #000000;
+		border-top-style: solid;
+		border-top-width: 0px;
+		color: #000000;
+		column-break-after: avoid;
+		display: block;
+		font-family: ＤＦ特太ゴシック体;
+		font-size: 16pt;
+		font-weight: normal;
+		line-height: 100%;
+		margin: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		mc-auto-number-offset: 0;
+		mc-auto-number-position: inside-head;
+		mc-heading-level: 2;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		padding-top: 8px;
+		page-break-after: avoid;
+		page-break-before: always;
+		page-break-inside: avoid;
+	}
+
+	h1.No_jiyo
+	{
+		border-bottom-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-color: #000000;
+		border-left-color: #000000;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-right-color: #000000;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-top-color: #000000;
+		border-top-style: solid;
+		border-top-width: 0px;
+		color: #000000;
+		column-break-after: avoid;
+		display: block;
+		font-family: ＤＦ特太ゴシック体;
+		font-size: 16pt;
+		font-weight: normal;
+		line-height: 28pt;
+		margin: .67em 0;
+		margin-bottom: .67em;
+		margin-left: -3pt;
+		margin-right: 0pt;
+		margin-top: .67em;
+		mc-auto-number-offset: 0;
+		mc-auto-number-position: inside-head;
+		mc-heading-level: 2;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		padding-top: 8px;
+		page-break-after: avoid;
+		page-break-before: always;
+		page-break-inside: avoid;
+	}
+
+	h3.SectionTitleBL2
+	{
+		border-bottom-style: solid;
+		border-color: #c0c0c0;
+		line-height: 17pt;
+		page-break-after: avoid;
+		color: #000000;
+		border-bottom-width: 1px;
+		font-size: 10pt;
+		font-family: ＤＦ特太ゴシック体;
+		font-weight: normal;
+		padding-left: 0.5em;
+		margin-left: -2em;
+		mc-heading-level: 0;
+	}
+
+	h3.SectionTitleBL3
+	{
+		padding-left: 1em;
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+		border-bottom-style: solid;
+		border-color: #c0c0c0;
+		line-height: 17pt;
+		page-break-after: avoid;
+		color: #000000;
+		border-bottom-width: 1px;
+		font-size: 10pt;
+		font-family: ＤＦ特太ゴシック体;
+		mc-heading-level: 0;
+	}
+
+	p.SectionTitleBL3
+	{
+		margin-left: -2em;
+		padding-left: 1em;
+		mc-heading-level: 0;
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+		border-bottom-style: solid;
+		border-color: #c0c0c0;
+		line-height: 17pt;
+		page-break-after: avoid;
+		mc-auto-number-class: autoNumPos;
+		color: #000000;
+		border-bottom-width: 1px;
+		font-size: 10pt;
+		font-family: ＤＦ特太ゴシック体;
+	}
+
+/* h3～h5 bold
+	------------------------------------------------240627 */
+
+	h3.bold
+	{
+		font-weight: bold;
+		font-size: 9pt;
+		margin-bottom: 0px;
+		mc-heading-level: 0;
+	}
+
+	h4.bold
+	{
+		font-weight: bold;
+		font-size: 9pt;
+		margin-bottom: 0px;
+		mc-heading-level: 0;
+	}
+
+	h5.bold
+	{
+		font-weight: bold;
+		font-size: 9pt;
+		margin-bottom: 0px;
+		mc-heading-level: 0;
+	}
+
+p.IndexHeading
+{
+	white-space: inherit;
+	margin: 0.3em;
+	margin-top: 1.8em;
+	padding-top: 1.5em;
+	margin-bottom: 0em;
+}
+
+body
+{
+	line-height: 150%;
+}
+
+/**  250711　追加　**/
+p.id_tip
+{
+	font-weight: bold;
+	line-height: 16pt;
+	font-size: 11pt;
+	background-image: url('../Images/style/tip.png');
+	margin-left: 0em;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 2.5em;
+}
+
+p.id_info
+{
+	font-weight: bold;
+	line-height: 16pt;
+	font-size: 11pt;
+	margin-left: 0em;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/style/info.png');
+	background-size: contain;
+	padding-left: 2.5em;
+}
+
+p.id_caution
+{
+	font-weight: bold;
+	line-height: 16pt;
+	font-size: 11pt;
+	margin-left: 0em;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/style/caution.png');
+	background-size: contain;
+	padding-left: 2.5em;
+}
+
+div.id_tip
+{
+	border-color: #EBF0FC;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	page-break-inside: avoid;
+	background: #e6f6e6;
+	border-left: solid 2px #009400;
+	background-color: #f1f8f1;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #009400;
+	border-right-color: #EBF0FC;
+	border-top-color: #EBF0FC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #f5f5f5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+
+div.id_info
+{
+	border-color: #EBF0FC;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	page-break-inside: avoid;
+	border-left: solid 2px #4cb3d4;
+	background: #eef9fd;
+	background-color: #f2fbff;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #4cb3d4;
+	border-right-color: #EBF0FC;
+	border-top-color: #EBF0FC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #f5f5f5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+
+div.id_caution
+{
+	border-color: #EBF0FC;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	page-break-inside: avoid;
+	background: #fff8e6;
+	border-left: solid 2px #e6a700;
+	background-color: #fffaed;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #e6a700;
+	border-right-color: #EBF0FC;
+	border-top-color: #EBF0FC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #f5f5f5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+
+span.code
+	{
+		border-bottom: solid 1px #dcdcdc;
+		border-left: solid 2px #dcdcdc;
+		border-right: solid 1px #dcdcdc;
+		border-top: solid 1px #dcdcdc;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+		background-color: #f5f5f5;
+		color: #c72f59;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin-left: 4px;
+		margin-right: 4px;
+		font-size: 9pt;
+	}
+
+span.tip
+	{
+		font-size: 9pt;
+		color: #000000;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-left: 3px;
+		margin-right: 3px;
+		border-bottom: solid 1px #b0d1b0;
+		border-left-color: #b0d1b0;
+		border-left: solid 1px #b0d1b0;
+		border-right: solid 1px #b0d1b0;
+		border-top: solid 1px #b0d1b0;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		background-color: #e4f8e4;
+	}
+
+span.info
+	{
+		font-size: 9pt;
+		color: #000000;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin-left: 4px;
+		margin-right: 4px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		border-bottom: solid 1px #c2d9e1;
+		border-left-color: #c2d9e1;
+		border-left: solid 1px #c2d9e1;
+		border-right: solid 1px #c2d9e10;
+		border-top: solid 1px #c2d9e1;		
+		background-color: #d8f2fa;
+		
+		
+	}
+
+span.caution
+	{
+		font-size: 9pt;
+		color: #000000;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin-left: 4px;
+		margin-right: 4px;
+		border-bottom: solid 1px #e5d7b0;
+		background-color: #ffefc4;
+		border-left: solid 1px #e5d7b0;
+		border-left-color: #e5d7b0;
+		border-right: solid 1px #e5d7b0;
+		border-top: solid 1px #e5d7b0;
+		border-top-color: #e5d7b0;		
+	}
+
+span.note
+	{
+		font-size: 9pt;
+		color: #000000;
+		border-bottom: solid 1px #dddedf;
+		background-color: #f6f7f8;
+		border-bottom-color: #dddedf;
+		border-left: solid 1px #dddedf;
+		border-left-color: #dddedf;
+		border-right: solid 1px #dddedf;
+		border-right-color: #dddedf;
+		border-top: solid 1px #dddedf;
+		border-top-color: #dddedf;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+/*----------------------------  今のところ使わない　　　
+p.id_note
+{
+	font-weight: bold;
+	line-height: 16pt;
+	font-size: 11pt;
+	margin-left: 0em;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/style/note.png');
+	background-size: contain;
+	padding-left: 2.5em;
+}
+p.id_danger
+{
+	font-weight: bold;
+	line-height: 16pt;
+	font-size: 11pt;
+	margin-left: 0em;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/style/danger.png');
+	background-size: contain;
+	padding-left: 2.5em;
+}
+
+div.id_note
+{
+	border-color: #EBF0FC;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	page-break-inside: avoid;
+	background-color: #fffdf5;
+	border-left: solid 2px #d4d5d8;
+	background: #fdfdfe;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #d4d5d8;
+	border-right-color: #EBF0FC;
+	border-top-color: #EBF0FC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #d4d5d8;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+
+div.id_danger
+{
+	border-color: #EBF0FC;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	page-break-inside: avoid;
+	background: #ffebec;
+	border-left: solid 2px #e13238;
+	background-color: #fff5f5;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #e13238;
+	border-right-color: #EBF0FC;
+	border-top-color: #EBF0FC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #f5f5f5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+-------------------------------------*/
+
+}
