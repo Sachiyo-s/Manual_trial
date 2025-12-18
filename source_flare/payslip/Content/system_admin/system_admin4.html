@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>住民税特別徴収税額通知書を配信する<!-- omit in toc --></h1>
+        <p>PCA給与シリーズから住民税特別徴収税額通知書を PCA Hub 給与明細サービスを通じて社員に対して配信するための方法です。</p>
+        <div class="id_info">
+            <p class="id_info">制限</p>
+            <ul>
+                <li>
+                    <p>住民税特別徴収税額通知書の配信や管理は PCA Hub 給与明細のシステム管理者のみが行うことができます。</p>
+                </li>
+                <li>
+                    <p>明細が公開されると社員に公開メールが配信されます。<br />サーバーの状況により、指定された日時よりも遅れてメールが配信される場合があります。<br /></p>
+                </li>
+            </ul>
+        </div>
+        <div class="Section">
+            <h2><a name="SC01"></a>住民税特別徴収税額通知書をアップロードする</h2>
+            <p>配信に必要な住民税特別徴収税額通知書データはeLTAXからダウンロードする必要があります。<br />ダウンロード方法についてはPCA給与シリーズのマニュアルをご確認ください。<br /></p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「社員」-「特別徴収」-「特別徴収税額通知配信」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">配信データを選択し、[読込] ボタンをクリックします。<br /></p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image1.png" alt="1" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">自動で社員とデータの一致判定が行われます。<br />社員コードが一致しない場合、こちらのダイアログが表示されます。<br />社員コードが一致しないデータは配布することができません。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image9.png" alt="9" class="scale400" />
+                </div>
+                <p class="Indent1">社員コードが一致したものの、氏名が一致しないなど自動判定できないデータがある場合、一致状態を確認する必要があります。<br />組み合わせに問題なければチェックを付け、[OK]ボタンをクリックしてください。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image2.png" alt="2" class="scale550" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(4) &#160;">配信したい社員にチェックを付け、 [実行] ボタンをクリックします。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image3.png" alt="3" class="scale500" />
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(5) &#160;">住民税特別徴収税額通知書の配信設定を行います。</p>
+                <div class="Steps">
+                    <p class="StepAutoNumK" MadCap:autonum="1) ">PCA Hub 給与明細上で住民税特別徴収税額通知書を公開およびメール配信したい日時を設定します。</p>
+                </div>
+                <div class="Steps">
+                    <p class="StepAutoNumKcont" MadCap:autonum="2) ">配信時に送信されるメールの件名と本文を設定します。</p>
+                </div>
+                <div class="Steps">
+                    <p class="StepAutoNumKcont" MadCap:autonum="3) ">住民税特別徴収税額通知書以外に同時に配信したいファイルがあれば「添付ファイル」を社員ごとまたは一括で指定します。</p>
+                    <div class="Fig">
+                        <img src="../assets/system_admin4.image4.png" alt="4" class="scale400" />
+                    </div>
+                </div>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(6) &#160;">アップロード処理が正常に完了したことを確認します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image5.png" alt="5" class="scale500" />
+                </div>
+            </div>
+            <div>
+                <h3 class="SectionTitleBL2">アップロードできるファイルに関する制限</h3>
+                <p>「明細を配信する」の <MadCap:xref href="system_admin2.html#seigen">アップロードできるファイルに関する制限</MadCap:xref> をご確認ください。</p>
+                <div class="id_tip">
+                    <p class="id_tip">ポイント</p>
+                    <ul>
+                        <li>
+                            <p> 住民税特別徴収税額通知書を確認するためにソフトを用意する必要はありません。<br />住民税特別徴収税額通知書の展開は、給与明細クライアントサイト上で行うことができます。</p>
+                        </li>
+                        <li>
+                            <p>PCA給与シリーズからアップロード作業を行う際、社員に「eLTAX 特徴税通パスワード確認サイト」のURLも配信されます。<br />社員は展開画面からワンクリックで「eLTAX 特徴税通パスワード確認サイト」を開くことができます。<br /></p>
+                        </li>
+                        <li>
+                            <p>住民税特別徴収税額通知書は、社員が展開することで明細一覧に展開したファイルが追加されます。<br />システム管理者は全ての明細を閲覧できるため、住民税特別徴収税額通知書も閲覧することができます。<br /></p>
+                        </li>
+                        <li>
+                            <p>その他「明細を配信する」の <a href="system_admin2.html#ポイント">ポイント</a> もご確認ください。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3 class="SectionTitleBL2">公開日時に関する注意事項</h3>
+                <ul>
+                    <li>
+                        <p>住民税特別徴収税額通知書をアップロードする際は、公開日時をPCA Hub 給与明細の契約期間内に設定してください。</p>
+                        <ul>
+                            <li>
+                                <p>PCA Hub 給与明細の契約期間内のみ、クライアントサイトおよび管理サイトを閲覧することができます。<br />契約終了後は、住民税特別徴収税額通知書の閲覧およびダウンロード等、全ての操作が行えません。<br /></p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>サーバーの状況により、指定された日時よりも遅れてメールが配信される場合があります。<br /></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC02"></a>住民税特別徴収税額通知書の配信状況を確認する</h2>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「社員」-「特別徴収」-「特別徴収税額通知配信」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「配信状況」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image6.png" alt="6" class="scale500" />
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC03"></a>住民税特別徴収税額通知書の閲覧状況を確認する</h2>
+            <p>住民税特別徴収税額通知書はZIPファイルで配布されるため、受け取った社員は閲覧のために展開を行う必要があります。<br />明細一覧に「住民税特別徴収税額通知書 XXXX年」が追加されていた場合、社員によって展開が行われた状態となります。<br /></p>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA Hub 給与明細の管理サイトにアクセスします。<br /></p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「社員一覧」ページにて閲覧状況を確認したい任意の社員をクリックします。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image7.png" alt="7" class="scale500" />
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h2><a name="SC04"></a>住民税特別徴収税額通知書の配信設定を変更する</h2>
+            <p>配信済みのデータを直接編集することはできません。<br /><MadCap:xref href="#SC01">住民税特別徴収税額通知書をアップロードする</MadCap:xref> の手順で同じ住民税特別徴収税額通知書を再度アップロードすることにより、既存の配信設定を上書きすることができます。<br />この操作を行うと、既に展開されていた住民税特別徴収税額通知書も削除されるため、社員が再度展開を行う必要があることにご注意ください。<br /></p>
+        </div>
+        <div class="Section">
+            <h2><a name="SC05"></a>配信した住民税特別徴収税額通知書を削除する</h2>
+            <div class="Steps">
+                <p class="StepAutoNumKK" MadCap:autonum="(1) &#160;">PCA給与シリーズの「社員」-「特別徴収」-「特別徴収税額通知配信」を起動します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(2) &#160;">「配信状況」メニューを実行します。</p>
+            </div>
+            <div class="Steps">
+                <p class="StepAutoNumKKcont" MadCap:autonum="(3) &#160;">住民税特別徴収税額通知書を削除したい社員を選択して「削除」メニューを実行します。</p>
+                <div class="Fig">
+                    <img src="../assets/system_admin4.image8.png" alt="8" class="scale500" />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

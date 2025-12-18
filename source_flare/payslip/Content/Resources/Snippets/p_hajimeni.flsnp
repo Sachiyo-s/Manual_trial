@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>操作の説明は、基本的に次のような構成になっていますが、操作によっては異なる場合があります。</p>
+        <p class="sage">※このマニュアルは、PCAクラウド、PCAサブスク、パッケージ版、全て共通のマニュアルです。<br></br>ご使用の製品により、搭載されている機能や、表示される画面が異なる場合があります。</p>
+        <p>&#160;</p>
+        <p>操作の説明は、基本的に次のような構成になっていますが、操作によっては異なる場合があります。</p>
+        <div class="Section">
+            <h2 class="SectionTitleGaiyo">概要</h2>
+            <p>処理の概要です。</p>
+        </div>
+        <div class="Section">
+            <h2 class="SectionTitleCyui">ヒントと注意事項</h2>
+            <p>操作する上での注意事項です。</p>
+        </div>
+        <div class="Section">
+            <h2 class="SectionTitleGamen">画面</h2>
+            <p>処理の主となる画面サンプルです。</p>
+        </div>
+        <div class="Section">
+            <h2 class="SectionTitleTejun">操作手順</h2>
+            <p>操作を順番に沿って説明しています。</p>
+        </div>
+        <div class="Section">
+            <h2 class="SectionTitleBenri">便利な機能</h2>
+            <p>使用可能な便利な機能について説明しています。</p>
+        </div>
+        <div class="Section">
+            <h2 class="SectionTitleBaai">こんな場合には</h2>
+            <p>操作をする上で、実際に起こりうる事例を挙げて、それに対処する方法を説明しています。</p>
+        </div>
+    </body>
+</html>

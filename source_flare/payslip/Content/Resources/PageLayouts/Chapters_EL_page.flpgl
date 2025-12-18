@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="First" Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PageType="first" PaddingLeft="65mm" PaddingRight="13mm" PaddingTop="80mm" PaddingBottom="20mm" BackgroundRepeat="no-repeat" BackgroundType="Solid" BackgroundImage="../Images/Chapter/tobira.png">
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="0in" Y="0.5625in" Right="0in" Bottom="0in" Width="393px" Height="539px" FlowIndex="1">
+        </Frame>
+    </Page>
+    <Page Width="182mm" Height="257mm" Padding="20px" PageSize="custom" PageType="emptyleft" PaddingLeft="1.5in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" Name="空">
+        <Frame Flow="header" Anchors="Left,Right,Top" Right="-15.875mm" Bottom="8.666667in" X="-1.114583in" Y="-0.8125in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" Height="0.2604167in" VerticalAlign="bottom" TextAlign="left" BorderBottomStyle="solid" BorderBottomWidth="0pt" BorderBottomColor="#000000" Width="615px" DividerTopMargin="7mm">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="-0.6145833in" Bottom="-0.7083333in" X="-1.125in" Y="8.510417in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="0.3125in" VerticalAlign="middle" TextAlign="left" BorderTopStyle="solid" BorderTopWidth="0.75pt" BorderTopColor="#000000" Width="615px" DividerWidth="0.5pt">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:p> <MadCap:variable xhtml:name="System.PageNumber" /> </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>
