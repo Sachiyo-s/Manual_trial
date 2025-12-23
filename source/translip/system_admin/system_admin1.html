@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>system_admin1.html</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E5%8F%96%E5%BC%95%E6%98%8E%E7%B4%B0%E9%85%8D%E4%BF%A1%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86---omit-in-toc">取引明細配信のための設定を行う<!-- omit in toc --></h1>
+<p>PCA Hub 取引明細を利用するための設定方法です。<br/>
+PCA 商魂・商管シリーズ にてあらかじめ連動設定を行う必要があります。<br/>
+<br/>
+PCA 商魂・商管シリーズの「随時」-「PCA Hub連動設定」から連動設定を行います。<br/>
+<img src="../assets/system_admin1.image1.png" alt="1"></p>
+<h2 id="%E7%9B%AE%E6%AC%A1---omit-in-toc">目次<!-- omit in toc --></h2>
+<ul>
+<li><a href="#%E5%88%B6%E9%99%90">制限</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE-url-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">サービスの URL を設定する</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E6%9C%9F%E9%96%93%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開期間を設定する</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E9%96%8B%E5%A7%8B%E6%97%A5%E3%81%AE%E5%88%9D%E6%9C%9F%E5%80%A4%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開開始日の初期値を設定する</a></li>
+<li><a href="#%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">リマインドメールを設定する</a></li>
+<li><a href="#%E6%A1%88%E5%86%85%E4%BA%8B%E9%A0%85%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">案内事項を作成する</a></li>
+<li><a href="#%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">配信先の登録を行う</a>
+<ul>
+<li><a href="#%E5%8D%98%E4%BD%93%E3%81%AE%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">単体の配信先の登録を行う</a></li>
+<li><a href="#%E4%B8%80%E6%8B%AC%E3%81%A7%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">一括で配信先の登録を行う</a></li>
+<li><a href="#%E5%88%A9%E7%94%A8%E9%80%9A%E7%9F%A5%E9%80%81%E4%BF%A1%E3%82%92%E8%A1%8C%E3%81%86">利用通知送信を行う</a></li>
+<li><a href="#%E5%8F%96%E5%BC%95%E5%85%88%E5%90%8C%E6%9C%9F%E3%82%92%E8%A1%8C%E3%81%86">取引先同期を行う</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="%E5%88%B6%E9%99%90">制限</h2>
+<ul>
+<li>PCA Hub との連動設定は PCA Hub 取引明細のシステム管理者のみが行うことができます。</li>
+<li>配信先の登録で行う取引先同期は、PCA Hub 取引明細のシステム管理者に加え、テナント管理者の権限が必要です。（<a href="../tenant_admin/tenant_admin4.html">テナント管理者を追加する</a>）</li>
+</ul>
+<h2 id="%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE-url-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">サービスの URL を設定する</h2>
+<ol>
+<li>
+<p>「有効サービス」のチェックをONにして「URL」欄にご契約されている PCA Hub のURLを入力します。<br/>
+さらに [移動] ボタンを実行します。<br/>
+<img src="../assets/system_admin1.image2.png" alt="2"><br/></p>
+</li>
+<li>
+<p>「ブラウザからログイン」を実行します。<br/>
+<img src="../assets/system_admin1.image3.png" alt="3"><br/></p>
+</li>
+<li>
+<p>表示されたブラウザページにて PCA Hub へのログインを行います。<br/>
+<img src="../assets/system_admin1.image4.png" alt="4"><br/></p>
+</li>
+<li>
+<p>PCA Hub の認可画面にて、要求内容を確認して「同意する」を実行します。<br/>
+<img src="../assets/system_admin1.image5.png" alt="5"><br/></p>
+</li>
+</ol>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E6%9C%9F%E9%96%93%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開期間を設定する</h2>
+<p>PCA Hub 取引明細上に明細を保存する期間を 1～10年 の間で設定します。<br/>
+ファイルの公開期間は、アップロード時に指定した公開開始日時 ～ 公開期間の年数となります。<br/>
+また、ファイル公開期間の変更は、設定の変更後にアップロードしたファイルにのみ適用されます。<br/>
+既にアップロード済みのファイルに対しては適用されません。<br/>
+<img src="../assets/system_admin1.image6.png" alt="6"><br/></p>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E9%96%8B%E5%A7%8B%E6%97%A5%E3%81%AE%E5%88%9D%E6%9C%9F%E5%80%A4%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開開始日の初期値を設定する</h2>
+<p>取引明細配信設定ダイアログの公開開始日に設定される初期値を指定します。<br/>
+日時指定を指定した場合、アップロードを行った日から指定した日数後の、指定時間に公開されます。<br/>
+即時公開を指定した場合、アップロードと同時に公開されます。<br/>
+<img src="../assets/system_admin1.image7.png" alt="7"><br/></p>
+<h2 id="%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">リマインドメールを設定する</h2>
+<p>公開開始日から指定した日数が経過しても、明細がダウンロードされていない場合、配信先ユーザーに対してリマインドメールを送ることができます。<br/>
+通知ユーザーに設定された領域ユーザーが、通知を受け取り、リマインドメールを送信します。<br/>
+<img src="../assets/system_admin1.image8.png" alt="8"><br/></p>
+<h2 id="%E6%A1%88%E5%86%85%E4%BA%8B%E9%A0%85%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">案内事項を作成する</h2>
+<p>案内事項の文書に、配信先ユーザーに対して提示する免責事項などを設定します。<br/>
+お客様の運用に適した内容に更新してください。<br/>
+設定可能な文字数は下記のとおりです。<br/></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>上限文字数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>案内事項</td>
+<td>2048文字</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../assets/system_admin1.image9.png" alt="9"><br/>
+<img src="../assets/system_admin1.image10.png" alt="10"><br/></p>
+<h2 id="%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">配信先の登録を行う</h2>
+<p>明細を配信する配信先を登録します。<br/>
+「前準備」-「取引先」-「配信先の登録」から登録することができます。<br/>
+個別または一括で登録することができます。<br/>
+取引先同期は、テナント管理者の権限が必要です。（<a href="../tenant_admin/tenant_admin4.html">テナント管理者を追加する</a>）<br/></p>
+<ul>
+<li><a href="#%E5%8D%98%E4%BD%93%E3%81%AE%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">単体の配信先の登録を行う</a></li>
+<li><a href="#%E4%B8%80%E6%8B%AC%E3%81%A7%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">一括で配信先の登録を行う</a></li>
+<li><a href="#%E5%88%A9%E7%94%A8%E9%80%9A%E7%9F%A5%E9%80%81%E4%BF%A1%E3%82%92%E8%A1%8C%E3%81%86">利用通知送信を行う</a></li>
+<li><a href="#%E5%8F%96%E5%BC%95%E5%85%88%E5%90%8C%E6%9C%9F%E3%82%92%E8%A1%8C%E3%81%86">取引先同期を行う</a></li>
+</ul>
+<h3 id="%E5%8D%98%E4%BD%93%E3%81%AE%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">単体の配信先の登録を行う</h3>
+<ol>
+<li>
+<p>「新規」ボタンを押します。<br/>
+<img src="../assets/system_admin1.image11.png" alt="11"><br/></p>
+</li>
+<li>
+<p>各項目を入力し、登録します。<br/></p>
+</li>
+</ol>
+<ul>
+<li>「取引先名」は、クライアントサイトで配信先の社名として表示されます。<br/></li>
+<li>「配信先ユーザー」の「ログイン名」は、一意な値を設定してください。他のユーザーと同じログイン名を指定することはできません。<br/></li>
+<li>「配信先ユーザー」の「表示名」は、クライアントサイトで担当者名として表示されます。<br/>
+<img src="../assets/system_admin1.image12.png" alt="12"><br/>
+<img src="../assets/system_admin1.image22.png" alt="22"><br/></li>
+</ul>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>配信先ユーザーのメールアドレスは、複数の配信先に登録することができます。<br/>
+複数の取引先に登録されている場合、ログイン名の背景色が変わります。<br/>
+<img src="../assets/system_admin1.image23.png" alt="23"><br/></li>
+<li>「請求書配信」が「有効」になっている配信先に対して、請求書配信が行われます。<br/>
+他の明細も同様です。<br/></li>
+</ul>
+<h3 id="%E4%B8%80%E6%8B%AC%E3%81%A7%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E8%A1%8C%E3%81%86">一括で配信先の登録を行う</h3>
+<ol>
+<li>
+<p>「一括登録」ボタンを押します。<br/>
+<img src="../assets/system_admin1.image13.png" alt="13"><br/></p>
+</li>
+<li>
+<p>表示条件を設定します。<br/>
+<img src="../assets/system_admin1.image14.png" alt="14"><br/></p>
+</li>
+<li>
+<p>各項目を入力し、登録します。<br/>
+「作成」にチェックを入れた得意先/仕入先が、配信先として作成されます。<br/>
+<img src="../assets/system_admin1.image15.png" alt="15"><br/></p>
+</li>
+</ol>
+<h3 id="%E5%88%A9%E7%94%A8%E9%80%9A%E7%9F%A5%E9%80%81%E4%BF%A1%E3%82%92%E8%A1%8C%E3%81%86">利用通知送信を行う</h3>
+<p>任意で、配信先ユーザーへ「PCA Hub 取引明細」を利用して文書を送付することを、事前に案内するメールを送信することができます。<br/>
+他の方法で既に「PCA Hub 取引明細」を利用して文書を送付することを配信先へご案内済みの場合は、送信する必要はありません。<br/></p>
+<ol>
+<li>
+<p>「前準備」-「メール送信文の登録」から、メール送信文を登録します。<br/>
+本文を初期値のまま使用する場合は、メールアドレスや自社担当者名などを適切な値に修正して登録します。<br/>
+詳細は、PCA 商魂・商管シリーズのマニュアルをご確認ください。<br/>
+<img src="../assets/system_admin1.image17.png" alt="17"><br/></p>
+</li>
+<li>
+<p>「前準備」-「取引先」-「配信先の登録」を起動します。<br/></p>
+</li>
+<li>
+<p>個別画面、一覧画面から送信したい取引先を選択し「利用通知送信」ボタンを押します。<br/></p>
+</li>
+<li>
+<p>利用通知を送信するメール送信文を選択し、「次へ」ボタンを押します。<br/>
+<img src="../assets/system_admin1.image18.png" alt="18"><br/></p>
+</li>
+<li>
+<p>メール設定を行います。<br/>
+お客様がお使いのメールを使用して送信を行います。<br/>
+設定方法はシステム管理者にお問い合わせください。<br/>
+<img src="../assets/system_admin1.image19.png" alt="19"><br/>
+<img src="../assets/system_admin1.image20.png" alt="20"><br/></p>
+</li>
+<li>
+<p>送信したい配信先ユーザーを選択し、送信ボタンを押すと、利用通知メールが送信されます。<br/>
+<img src="../assets/system_admin1.image21.png" alt="21"><br/></p>
+</li>
+</ol>
+<h3 id="%E5%8F%96%E5%BC%95%E5%85%88%E5%90%8C%E6%9C%9F%E3%82%92%E8%A1%8C%E3%81%86">取引先同期を行う</h3>
+<p>新規に登録した配信先データや、配信先の登録内容に追加や修正が入った場合に、PCA Hub 取引明細と同期する必要があります。<br/>
+この操作はテナント管理者のみが行えます。<br/>
+新しく追加した配信先ユーザーは、同期されるとPCA Hubにアカウントが登録されます。<br/>
+<strong>アカウントが登録されると、配信先ユーザーに「パスワード設定リクエスト」「ライセンス付与のお知らせ」のメールが送信されます。</strong><br/></p>
+<ol>
+<li>
+<p>個別画面、一覧画面で「Hub取引先同期」ボタンを押します。<br/></p>
+</li>
+<li>
+<p>同期を行います。<br/>
+アカウントが新規登録された場合には配信先ユーザーに「パスワード設定リクエスト」「ライセンス付与のお知らせ」のメールが送信されます。<br/>
+<img src="../assets/system_admin1.image16.png" alt="16"><br/></p>
+</li>
+<li>
+<p>同期完了後、必ずデータ領域のバックアップを行ってください。<br/>
+「ファイル」-「データ領域のバックアップ」または「データ領域の一括バックアップ」から実行します。<br/></p>
+</li>
+</ol>
+
+</body>
+</html>
