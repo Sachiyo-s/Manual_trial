@@ -1,0 +1,41 @@
+/*<meta />*/
+
+@charset "UTF-8";
+
+@import url('comstyle.css');
+
+@import url('htmlstyle.css');
+
+/* =============================================================================
+ Web Manual
+============================================================================= */
+
+@media non-print
+{
+	/* マニュアル別の色
+	--------------------------------------------------------- */
+
+	div.title2
+	{
+		background-Color: #09529F;
+	}
+}
+
+p.SectionTitleBL2
+{
+	border-bottom-style: solid;
+	border-color: #c0c0c0;
+	border-left-color: #74a2cd;
+	border-bottom-width: 0px;
+	font-weight: normal;
+	margin-left: 8px;
+	padding-left: 0.5em;
+	border-left-style: solid;
+	border-left-width: 3px;
+	color: #000000;
+	padding-top: 4px;
+	line-height: 24pt;
+	top: 0em;
+	margin-top: 2em;
+}
+
