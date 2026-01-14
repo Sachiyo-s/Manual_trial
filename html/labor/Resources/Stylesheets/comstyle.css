@@ -1,0 +1,522 @@
+/*<meta />*/
+
+@charset "UTF-8";
+
+/* =============================================================================
+ 共通
+============================================================================= */
+
+/* 全般
+--------------------------------------------------------- */
+
+p.top
+{
+	margin-top: 15pt;
+}
+
+li
+{
+	page-break-inside: avoid;
+}
+
+/* リスト
+--------------------------------------------------------- */
+
+ol,
+ul
+{
+	margin-bottom: 4px;
+	margin-top: 12px;
+	margin-left: 22px;
+}
+
+ul.kome,
+ul.komeLeft
+{
+	margin-top: 7px;
+}
+
+ul ul
+{
+	list-style-type: circle;
+	margin-top: 8pt;
+}
+
+ul ul ul
+{
+	list-style-type: disc;
+}
+
+ol
+{
+	margin-top: 12pt;
+	margin-left: 12pt;
+	font-size: 9pt;
+}
+
+ol li
+{
+	margin-top: 4pt;
+	padding-top: 0px;
+	line-height: 150%;
+}
+
+ul li
+{
+	margin-top: 4pt;
+	padding-top: 0px;
+	line-height: 110%;
+}
+
+ul li p
+{
+	padding-top: -1pt;
+}
+
+ul ul li p
+{
+	padding-top: -1pt;
+}
+
+ol ul p
+{
+	margin-top: 0pt;
+	padding-top: 2px;
+	line-height: 140%;
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ul.siro
+{
+	list-style: none;
+}
+
+p.siro
+{
+	mc-auto-number-format: "◇ ";
+	text-indent: -13pt;
+	padding-left: 0.5pt;
+}
+
+ul.kuro
+{
+	list-style: none;
+}
+
+p.kuro
+{
+	mc-auto-number-format: "◆ ";
+	text-indent: -13pt;
+	padding-left: 0.5pt;
+}
+
+ul.sikaku
+{
+	list-style: none;
+}
+
+p.sikaku
+{
+	mc-auto-number-format: "■ ";
+	text-indent: -13pt;
+	padding-left: 0.5pt;
+}
+
+ul.kome,
+ul.komeLeft
+{
+	list-style: none;
+}
+
+p.kome
+{
+	mc-auto-number-format: "※ ";
+	text-indent: -13pt;
+	padding-left: 0.5pt;
+}
+
+ol.komeNum
+{
+	list-style: none;
+}
+
+p.komeNum
+{
+	mc-auto-number-format: "SH:※{n+} ";
+	text-indent: -13pt;
+	padding-left: 1pt;
+}
+
+p.Indent1
+{
+	text-indent: 0px;
+	margin-left: 1.12em;
+}
+
+p.Indent2
+{
+	text-indent: 0px;
+	margin-left: 2.24em;
+}
+
+p.Indent4
+{
+	text-indent: 0px;
+	margin-left: 4.48em;
+}
+
+/* セクション
+--------------------------------------------------------- */
+
+div.Section
+{
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+div.Steps
+{
+	margin-left: 2em;
+	margin-top: 1em;
+	page-break-inside: avoid;
+}
+
+p.StepAutoNumK
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -1.5em;
+	margin-left: -1em;
+	padding-left: 0.8em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SK:{n=1}) ";
+}
+
+p.StepAutoNumKcont
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -1.5em;
+	margin-left: -1em;
+	padding-left: 0.8em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SK:{n+}) ";
+}
+
+p.StepAutoNumKK
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -2em;
+	margin-left: -1.7em;
+	padding-left: 2em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SM:({n=1})  ";
+}
+
+p.StepAutoNumKKcont
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -2em;
+	margin-left: -1.7em;
+	padding-left: 2em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SM:({n+})  ";
+}
+
+p.StepAutoNumRO
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -2em;
+	margin-left: -1.7em;
+	padding-left: 2em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SR:{r=1}.  ";
+}
+
+p.StepAutoNumROcont
+{
+	/*
+	page-break-after: avoid;
+	*/
+	text-indent: -2em;
+	margin-left: -1.7em;
+	padding-left: 2em;
+	mc-auto-number-class: autoNumPos;
+	mc-auto-number-format: "SR:{r+}.  ";
+}
+
+div.NoteAttention
+{
+	border-color: #c0c0c0;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	font-style: normal;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	padding-bottom: 3px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 3px;
+	page-break-inside: avoid;
+	mc-auto-number-format: "{size 10pt}{b}【ご注意】{/b}{/size}";
+}
+
+div.NoteNote
+{
+	border-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	font-style: normal;
+	margin-bottom: 1em;
+	margin-left: 2px;
+	margin-top: 1em;
+	padding-bottom: 3px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 3px;
+	page-break-inside: avoid;
+}
+
+p.blue
+{
+	color: blue;
+}
+
+p.red
+{
+	color: red;
+}
+
+p.green
+{
+	color: green;
+}
+
+p.pink
+{
+	color: #ff1493;
+}
+
+p.underline
+{
+	text-decoration: underline;
+}
+
+p.bold
+{
+	font-weight: bold;
+}
+
+span.blue
+{
+	color: blue;
+}
+
+span.red
+{
+	color: red;
+}
+
+span.green
+{
+	color: green;
+}
+
+span.pink
+{
+	color: #ff1493;
+}
+
+span.underline
+{
+	text-decoration: underline;
+}
+
+span.bold
+{
+	font-weight: bold;
+}
+
+p.maru
+{
+	mc-auto-number-format: '○';
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+p.sage
+{
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+
+p.sage1
+{
+	margin-left: 1.12em;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+p.sage2
+{
+	margin-left: 2.24em;
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+
+p.Indent3
+{
+	text-indent: 0px;
+	margin-left: 3.36em;
+}
+
+ul.kome_30
+{
+	list-style: none;
+	margin-top: 7px;
+	margin-left: 30px;
+}
+
+ol.kome_30
+{
+	margin-left: 30px;
+	margin-top: 7px;
+	list-style: none;
+}
+
+p.kome_30
+{
+	text-indent: -13pt;
+	padding-left: 0.5pt;
+	mc-auto-number-format: '※';
+}
+
+p.sage3
+{
+	margin-left: 3.36em;
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+
+p.sage4
+{
+	margin-left: 4.48em;
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+
+p.sage5
+{
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+	margin-left: 5.6em;
+}
+
+p.Indent5
+{
+	margin-left: 5.6em;
+}
+
+@media non-print
+{
+	p.sage
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage1
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage2
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage3
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage4
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage5
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+}
+
+@media web
+{
+	p.sage
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage1
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage2
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage3
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage4
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	p.sage5
+	{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+}
+
