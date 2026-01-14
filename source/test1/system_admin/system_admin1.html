@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>system_admin1.html</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E7%B5%A6%E4%B8%8E%E6%98%8E%E7%B4%B0%E9%85%8D%E4%BF%A1%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86---omit-in-toc">給与明細配信のための設定を行う<!-- omit in toc --></h1>
+<p>PCA Hub 給与明細を利用するための設定方法です。<br/>
+PCA給与シリーズ にてあらかじめ連動設定を行う必要があります。<br/>
+<br/>
+PCA給与シリーズの「随時」-「PCA Hub連動設定」から連動設定を行います。<br/>
+<img src="../assets/system_admin1.image1.png" alt="1"></p>
+<h2 id="%E7%9B%AE%E6%AC%A1---omit-in-toc">目次<!-- omit in toc --></h2>
+<ul>
+<li><a href="#%E5%88%B6%E9%99%90">制限</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE-url-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">サービスの URL を設定する</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E6%9C%9F%E9%96%93%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開期間を設定する</a></li>
+<li><a href="#%E5%90%8C%E6%84%8F%E6%A1%88%E5%86%85%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">同意案内を作成する</a></li>
+<li><a href="#%E7%A4%BE%E5%93%A1%E3%81%A8-pca-hub-%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E7%B4%90%E3%81%A5%E3%81%91%E3%82%8B">社員と PCA Hub のアカウントを紐づける</a>
+<ul>
+<li><a href="#%E7%A4%BE%E5%93%A1%E8%87%AA%E8%BA%AB%E3%81%ABpca-hub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%A6%E3%82%82%E3%82%89%E3%81%84%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%82%8B">社員自身にPCA Hub アカウントを登録してもらい、メールアドレスを受け入れる</a></li>
+<li><a href="#%E7%A4%BE%E5%93%A1%E3%81%A8-pca-hub-%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E9%96%A2%E9%80%A3%E4%BB%98%E3%81%91%E3%82%92%E8%A1%8C%E3%81%86">社員と PCA Hub のアカウントの関連付けを行う</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%8C%E6%84%8F%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">同意状況を確認する</a>
+<ul>
+<li><a href="#pca%E7%B5%A6%E4%B8%8E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%8B%E3%82%89%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">PCA給与シリーズから確認する</a></li>
+<li><a href="#pca-hub-%E7%B5%A6%E4%B8%8E%E6%98%8E%E7%B4%B0%E3%81%8B%E3%82%89%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">PCA Hub 給与明細から確認する</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%8C%E6%84%8F%E7%8A%B6%E6%B3%81%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B">同意状況を変更する</a></li>
+<li><a href="#%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E7%94%A8%E3%81%AE-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">インポート用の CSV ファイルを作成する</a></li>
+</ul>
+<h2 id="%E5%88%B6%E9%99%90">制限</h2>
+<ul>
+<li>PCA Hub との連動設定は PCA Hub 給与明細のシステム管理者のみが行うことができます。</li>
+</ul>
+<h2 id="%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE-url-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">サービスの URL を設定する</h2>
+<ol>
+<li>
+<p>「有効サービス」のチェックをONにして「URL」欄にご契約されている PCA Hub のURLを入力します。<br/>
+さらに [移動] ボタンを実行します。<br/>
+<img src="../assets/system_admin1.image2.png" alt="2"><br/></p>
+</li>
+<li>
+<p>「移動」ボタンを実行して「ブラウザからのログイン」を実行します。<br/>
+<img src="../assets/system_admin1.image3.png" alt="3"><br/></p>
+</li>
+<li>
+<p>表示されたブラウザページにて PCA Hub へのログインを行います。<br/>
+<img src="../assets/system_admin1.image4.png" alt="4"><br/></p>
+</li>
+<li>
+<p>PCA Hub の認可画面にて、要求内容を確認して「同意する」を実行します。<br/>
+<img src="../assets/system_admin1.image5.png" alt="5"><br/></p>
+</li>
+</ol>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E5%85%AC%E9%96%8B%E6%9C%9F%E9%96%93%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">明細の公開期間を設定する</h2>
+<p>PCA Hub 給与明細上に明細を保存する期間を 1～10年 の間で設定します。<br/>
+ファイルの公開期間は、アップロード時に指定した公開開始日時 ～ 公開期間の年数となります。<br/>
+また、ファイル公開期間の変更は、設定の変更後にアップロードしたファイルにのみ適用されます。<br/>
+既にアップロード済みのファイルに対しては適用されません。<br/>
+<img src="../assets/system_admin1.image6.png" alt="6"><br/></p>
+<h2 id="%E5%90%8C%E6%84%8F%E6%A1%88%E5%86%85%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">同意案内を作成する</h2>
+<p>社員に向けた同意案内の文章を設定します。<br/>
+明細を配信するためには、配信対象の社員が同意案内に対して事前に承諾している必要があります。<br/>
+<br/>
+設定可能な文字数は下記のとおりです。<br/></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>上限文字数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同意案内</td>
+<td>100文字</td>
+</tr>
+<tr>
+<td>同意事項</td>
+<td>500文字</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../assets/system_admin1.image7.png" alt="7"></p>
+<h2 id="%E7%A4%BE%E5%93%A1%E3%81%A8-pca-hub-%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E7%B4%90%E3%81%A5%E3%81%91%E3%82%8B">社員と PCA Hub のアカウントを紐づける</h2>
+<p>テナント管理者が操作する場合は <a href="../tenant_admin/tenant_admin1.html#pca%E7%B5%A6%E4%B8%8E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%8B%E3%82%89%E7%A4%BE%E5%93%A1%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">PCA給与シリーズから社員のアカウントを作成する</a> をご確認ください。<br/>
+テナント管理者が <a href="../tenant_admin/tenant_admin1.html#pca%E7%B5%A6%E4%B8%8E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%8B%E3%82%89%E7%A4%BE%E5%93%A1%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">PCA給与シリーズから社員のアカウントを作成する</a> を「ユーザー登録とライセンス付与を行う」を選択して実行した場合、こちらの操作は必要ありません。<br/>
+画面イメージは、テナント管理者とPCA Hub 給与明細システム管理者が別の場合のイメージになります。<br/></p>
+<h3 id="%E7%A4%BE%E5%93%A1%E8%87%AA%E8%BA%AB%E3%81%ABpca-hub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%A6%E3%82%82%E3%82%89%E3%81%84%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%82%8B">社員自身にPCA Hub アカウントを登録してもらい、メールアドレスを受け入れる</h3>
+<p>PCA Hub アカウントの操作は、テナント管理者が行うことができます。<br/>
+給与明細システム管理者は、社員と PCA Hub のアカウントの紐づけ操作を行います。<br/></p>
+<ol>
+<li>
+<p>テナント管理者による操作を行います。<br/></p>
+<ol>
+<li>テナント管理サイトのユーザー登録URLにアクセスします。<br/>
+操作方法は<a href="https://pca.jp/area_support/manual/hubedoc/03_manager/manager_03.html">テナント管理サイトのユーザー登録URL:TODO</a>をご確認ください。<br/>
+対象社員に自身のアカウントを登録していただきます。<br/></li>
+<li>テナント管理サイトからの招待メール送信します。<br/>
+<ol>
+<li>テナント管理サイトのユーザー一覧にアクセスします。<br/></li>
+<li>ステータスで並び替えを行い、「未招待」のユーザーを選択して招待メールを送信します。<br/>
+<img src="../assets/system_admin1.image22.png" alt="22"><br/></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>給与明細システム管理者による操作を行います。<br/></p>
+<ol>
+<li>PCA給与シリーズの「PCA Hub 連動設定」-「社員一覧」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image8.png" alt="8"><br/></li>
+<li>「メールアドレス受入」メニューを実行します。<br/>
+Hub ユーザー名「未設定」で社員を絞り込み、メールアドレスの受入を行います。<br/></li>
+</ol>
+<ul>
+<li>PCA給与シリーズの社員マスターにメールアドレスが設定されます。<br/></li>
+<li>社員とPCA Hub アカウントの関連付けも同時に処理されます。<br/>
+<img src="../assets/system_admin1.image23.png" alt="23"><br/></li>
+</ul>
+<ol start="3">
+<li><a href="#%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E7%94%A8%E3%81%AE-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">インポート用の CSV ファイルを作成する</a>を行います。<br/></li>
+</ol>
+</li>
+</ol>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>手順1-2の招待メール送信は手順1-1の後、いつ行っていただいても問題ありません。<br/></li>
+<li>手順2-3ではライセンス付与メールだけが送信されます。<br/></li>
+</ul>
+<h3 id="%E7%A4%BE%E5%93%A1%E3%81%A8-pca-hub-%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E9%96%A2%E9%80%A3%E4%BB%98%E3%81%91%E3%82%92%E8%A1%8C%E3%81%86">社員と PCA Hub のアカウントの関連付けを行う</h3>
+<p>メールアドレスの受入を行った場合、こちらの操作は不要です。<br/></p>
+<ol>
+<li>
+<p>「社員一覧」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image8.png" alt="8"><br/></p>
+</li>
+<li>
+<p>社員一覧画面にて「社員関連付け」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image9.png" alt="9"><br/></p>
+</li>
+<li>
+<p>正常に紐づけができたことを確認します。<br/>
+<img src="../assets/system_admin1.image10.png" alt="10"><br/></p>
+</li>
+</ol>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>チェックがONになっている社員を対象に、メールアドレスにて関連付けを行います。</li>
+<li>PCA給与シリーズの社員マスターにメールアドレスが設定されている必要があります。</li>
+<li>社員マスターに登録されているメールアドレスは、PCA Hub アカウントに登録されているメールアドレスと一致している必要があります。</li>
+<li>PCA給与シリーズの「社員」-「社員登録」-「社員情報の登録」にて社員個別に関連付けを行うことも可能です。<br/>
+<img src="../assets/system_admin1.image11.png" alt="11"><br/></li>
+<li>社員一覧で、PCA Hub ユーザー名が「不明」の場合、アカウントの再登録を行う必要があります。<br/>
+<img src="../assets/system_admin1.image16.png" alt="16"><br/>
+<a href="../tenant_admin/tenant_admin1.html#%E7%A4%BE%E5%93%A1%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">社員のアカウントを作成する</a> を参考に、PCA Hub ユーザー名が「不明」の社員のアカウント作成を行います。<br/></li>
+</ul>
+<h2 id="%E5%90%8C%E6%84%8F%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">同意状況を確認する</h2>
+<h3 id="pca%E7%B5%A6%E4%B8%8E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%8B%E3%82%89%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">PCA給与シリーズから確認する</h3>
+<ol>
+<li>
+<p>「社員一覧」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image8.png" alt="8"><br/></p>
+</li>
+<li>
+<p>社員一覧画面にて「明細配布同意状況」列の内容を確認します。<br/>
+<img src="../assets/system_admin1.image12.png" alt="12"><br/></p>
+</li>
+</ol>
+<h3 id="pca-hub-%E7%B5%A6%E4%B8%8E%E6%98%8E%E7%B4%B0%E3%81%8B%E3%82%89%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">PCA Hub 給与明細から確認する</h3>
+<ol>
+<li>PCA Hub 給与明細の管理サイトにアクセスします。</li>
+<li>「社員一覧」ページにて「同意状況」列の内容を確認します。<br/>
+<img src="../assets/system_admin1.image13.png" alt="13"><br/></li>
+</ol>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>明細を配信するためには、配信対象の社員が同意案内に対して事前に同意している必要があります。</li>
+</ul>
+<h2 id="%E5%90%8C%E6%84%8F%E7%8A%B6%E6%B3%81%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B">同意状況を変更する</h2>
+<ol>
+<li>PCA Hub 給与明細の管理サイトにアクセスします。</li>
+<li>「社員一覧」ページにて任意の社員を選択して同意状況を変更します。<br/>
+<img src="../assets/system_admin1.image14.png" alt="14"><br/></li>
+</ol>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>下記のような場合に同意状況を強制的に変更することができます。
+<ul>
+<li>既に社員から同意を得られているので同意確認を行う必要がない。</li>
+<li>同意事項の内容を変更したので、社員にあらためて同意確認を行いたい。</li>
+</ul>
+</li>
+</ul>
+<h2 id="%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E7%94%A8%E3%81%AE-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">インポート用の CSV ファイルを作成する</h2>
+<p>既に PCA Hub アカウントが作成されている場合、ライセンスが付与されている場合は、操作は必要ありません。<br/>
+PCA Hub 給与明細システム管理者は、CSVファイルを作成し、テナント管理者に社員アカウントの作成およびライセンス付与を依頼します。<br/></p>
+<ol>
+<li>
+<p>「社員一覧」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image8.png" alt="8"><br/></p>
+</li>
+<li>
+<p>社員一覧画面にて「ファイル作成」メニューを実行します。<br/>
+<img src="../assets/system_admin1.image15.png" alt="15"><br/></p>
+</li>
+<li>
+<p>ユーザー登録とライセンス付与を同時に行うか選択して実行します。<br/>
+<img src="../assets/system_admin1.image20.png" alt="20"><br/></p>
+</li>
+</ol>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>CSV ファイルは対象の社員100名ごとに分割して出力されます。</li>
+<li>CSV ファイルのフォーマットについては <a href="https://pca.jp/area_support/manual/hubedoc/03_manager/manager_12.html">PCA Hub ユーザー CSV ファイルフォーマット</a> をご覧ください。</li>
+<li>ユーザーインポートについては <a href="../tenant_admin/tenant_admin1.html#csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">CSV ファイルからアカウントを作成する</a> をご覧ください。</li>
+<li>ユーザーインポート後の操作については、<a href="#%E7%A4%BE%E5%93%A1%E3%81%A8-pca-hub-%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E7%B4%90%E3%81%A5%E3%81%91%E3%82%8B">社員と PCA Hub のアカウントを紐づける</a> をご覧ください。</li>
+</ul>
+
+</body>
+</html>

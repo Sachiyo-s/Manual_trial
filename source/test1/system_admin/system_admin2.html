@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>system_admin2.html</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E6%98%8E%E7%B4%B0%E3%82%92%E9%85%8D%E4%BF%A1%E3%81%99%E3%82%8B---omit-in-toc">明細を配信する<!-- omit in toc --></h1>
+<p>PCA給与シリーズで出力した明細を PCA Hub 給与明細サービスを通じて社員に対して配信するための方法です。</p>
+<h2 id="%E7%9B%AE%E6%AC%A1---omit-in-toc">目次<!-- omit in toc --></h2>
+<ul>
+<li><a href="#%E5%88%B6%E9%99%90">制限</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B">明細をアップロードする</a>
+<ul>
+<li><a href="#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E6%98%8E%E7%B4%B0%E3%81%AE%E7%A8%AE%E9%A1%9E">アップロードできる明細の種類</a></li>
+<li><a href="#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%88%B6%E9%99%90">アップロードできるファイルに関する制限</a></li>
+<li><a href="#%E5%85%AC%E9%96%8B%E6%97%A5%E6%99%82%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">公開日時に関する注意事項</a></li>
+</ul>
+</li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E9%85%8D%E4%BF%A1%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">明細の配信状況を確認する</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E9%96%B2%E8%A6%A7%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">明細の閲覧状況を確認する</a></li>
+<li><a href="#%E6%98%8E%E7%B4%B0%E3%81%AE%E9%85%8D%E4%BF%A1%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B">明細の配信設定を変更する</a></li>
+<li><a href="#%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%9F%E6%98%8E%E7%B4%B0%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B">配信した明細を削除する</a></li>
+</ul>
+<h2 id="%E5%88%B6%E9%99%90">制限</h2>
+<ul>
+<li>明細の配信や管理は PCA Hub 給与明細のシステム管理者のみが行うことができます。</li>
+<li>明細が公開されると社員に公開メールが配信されます。<br/>
+サーバーの状況により、指定された日時よりも遅れてメールが配信される場合があります。<br/></li>
+</ul>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B">明細をアップロードする</h2>
+<ol>
+<li>
+<p>PCA給与シリーズの「給与」-「給与明細書」を起動します。</p>
+</li>
+<li>
+<p>「出力の種類」で「印刷等」を選択し、配信を行いたい社員を指定して [印刷指示] ボタンをクリックします。<br/>
+<img src="../assets/system_admin2.image1.png" alt="1"><br/></p>
+</li>
+<li>
+<p>「出力先の選択」で「明細配信」を選択して [実行] ボタンをクリックします。<br/>
+「PDFファイル名の設定」にてアップロードされるファイル名を変更することができます。<br/>
+<img src="../assets/system_admin2.image2.png" alt="2"><br/></p>
+</li>
+<li>
+<p>明細の配信設定を行います。</p>
+<ol>
+<li>PCA Hub 給与明細上で明細を公開およびメール配信したい日時を設定します。</li>
+<li>配信時に送信されるメールの件名と本文を設定します。</li>
+<li>明細以外に同時に配信したいファイルがあれば「添付ファイル」を社員ごとまたは一括で指定します。<br/>
+<img src="../assets/system_admin2.image3.png" alt="3"><br/>
+<img src="../assets/system_admin2.image4.png" alt="4"><br/></li>
+</ol>
+</li>
+<li>
+<p>アップロード処理が正常に完了したことを確認します。<br/>
+<img src="../assets/system_admin2.image5.png" alt="5"></p>
+</li>
+</ol>
+<h3 id="%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E6%98%8E%E7%B4%B0%E3%81%AE%E7%A8%AE%E9%A1%9E">アップロードできる明細の種類</h3>
+<ul>
+<li>給与明細書</li>
+<li>賞与明細書</li>
+<li>源泉徴収票</li>
+<li>給与改定通知書</li>
+<li>標準報酬決定通知書</li>
+<li>標準報酬改定通知書</li>
+<li>年末調整通知書</li>
+<li>還付金明細書</li>
+<li>その他（任意のファイル）</li>
+</ul>
+<h3 id="%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%88%B6%E9%99%90">アップロードできるファイルに関する制限</h3>
+<table>
+<thead>
+<tr>
+<th>項目名</th>
+<th>上限値</th>
+<th>制限</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ファイル名</td>
+<td>250文字</td>
+<td>下記の記号を禁止<br/>・円マーク（¥）<br/>・スラッシュ（/）<br/>・コロン（:）<br/>・アスタリスク（*）<br/>・クエスチョンマーク（?）<br/>・ダブルクォート（&quot;）<br/>・小なり（&lt;）<br/>・大なり（&gt;）<br/>・パイプライン（|）</td>
+<td>大文字と小文字や全角と半角を区別しません。</td>
+</tr>
+<tr>
+<td>書類名</td>
+<td>30文字</td>
+<td></td>
+<td>明細を受信した社員がクライアントサイト上で目視するファイル名となります。</td>
+</tr>
+<tr>
+<td>サイズ</td>
+<td>5MB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ファイルの種類</td>
+<td></td>
+<td>・.pdf<br/>・.xlsx<br/>・.xls<br/>・.docx<br/>・.doc<br/>・.txt<br/>・.jpg<br/>・.jpeg<br/>・.png</td>
+<td></td>
+</tr>
+<tr>
+<td>ファイル数</td>
+<td>3</td>
+<td></td>
+<td>社員1人あたりの1回の配信でアップロード可能なファイル数です。<br/>1件の明細出力時に最大2件の任意のファイルを同時に配信することができます。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88---omit-in-toc">ポイント<!-- omit in toc --></h3>
+<ul>
+<li>明細をアップロードして配信するためには、配信対象の社員が明細配布の同意案内に対して事前に同意している必要があります。</li>
+<li>給与明細などの明細とは別に、任意のファイルを同梱して同時に配信することが可能です。</li>
+<li>明細の配信設定は、一度にアップロードされるすべての明細に対して同一の設定が反映されます。</li>
+<li>PCA Hub 給与明細にアップロードされる実ファイルの名前（<strong>ファイル名</strong>）と、PCA Hub 給与明細の画面上で確認できるファイルの名前（<strong>書類名</strong>）は異なります。</li>
+</ul>
+<h3 id="%E5%85%AC%E9%96%8B%E6%97%A5%E6%99%82%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">公開日時に関する注意事項</h3>
+<ul>
+<li>明細をアップロードする際は、公開日時をPCA Hub 給与明細の契約期間内に設定してください。<br/>
+<ul>
+<li>PCA Hub 給与明細の契約期間内のみ、クライアントサイトおよび管理サイトを閲覧することができます。<br/>
+契約終了後は、明細の閲覧およびダウンロード等、全ての操作が行えません。<br/></li>
+</ul>
+</li>
+<li>サーバーの状況により、指定された日時よりも遅れてメールが配信される場合があります。<br/></li>
+</ul>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E9%85%8D%E4%BF%A1%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">明細の配信状況を確認する</h2>
+<ol>
+<li>
+<p>PCA給与シリーズの「給与」-「給与明細書」を起動します。</p>
+</li>
+<li>
+<p>「配信状況」メニューを実行します。<br/>
+<img src="../assets/system_admin2.image6.png" alt="6"><br/></p>
+</li>
+<li>
+<p>年間の配信状況を確認したい場合には「年間表示」メニューを実行します。<br/>
+<img src="../assets/system_admin2.image7.png" alt="7"><br/></p>
+</li>
+</ol>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E9%96%B2%E8%A6%A7%E7%8A%B6%E6%B3%81%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">明細の閲覧状況を確認する</h2>
+<p>明細を受け取った社員が、明細を閲覧したかどうかを確認することができます。<br/>
+<br/></p>
+<ol>
+<li>PCA Hub 給与明細の管理サイトにアクセスします。</li>
+<li>「社員一覧」ページにて閲覧状況を確認したい任意の社員をクリックします。</li>
+<li>アップロード済みの明細一覧が表示されます。<br/>
+既読の場合は細字で、未読の場合は太字で表示されます。<br/>
+<img src="../assets/system_admin2.image8.png" alt="8"></li>
+</ol>
+<h2 id="%E6%98%8E%E7%B4%B0%E3%81%AE%E9%85%8D%E4%BF%A1%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B">明細の配信設定を変更する</h2>
+<p>配信済みのデータを直接編集することはできません。<br/>
+<a href="#%E6%98%8E%E7%B4%B0%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B">明細をアップロードする</a> の手順で同じ明細を再度アップロードすることにより、既存の配信設定を上書きすることができます。</p>
+<h2 id="%E9%85%8D%E4%BF%A1%E3%81%97%E3%81%9F%E6%98%8E%E7%B4%B0%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B">配信した明細を削除する</h2>
+<ol>
+<li>PCA給与シリーズの「給与」-「給与明細書」を起動します。</li>
+<li>「配信状況」メニューを実行します。</li>
+<li>明細を削除したい社員を選択して「削除」メニューを実行します。<br/>
+<img src="../assets/system_admin2.image9.png" alt="9"><br/></li>
+</ol>
+
+</body>
+</html>
